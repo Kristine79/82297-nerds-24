@@ -35,11 +35,7 @@
         <fieldset>
           <legend>Стоимость</legend>
           <ul>
-            <li class="filter-option">
-              <label for="range">Диапазон</label>
-              <input id="range" type="range" min="1" max="4" value="3">
-            </li>
-
+            <!--Здесь будет ползунок-->
             <li class="filter-option">
               <label  for="from">От</label>
               <input id="from" type="text" value="" placeholder="o">
@@ -54,56 +50,59 @@
 
         <fieldset>
           <legend>Сетка</legend>
-          <p>
-            <label for="adaptive">Адаптивная</label>
-            <img src="img/radio-on.svg" width="25" height="25" alt="Button">
-            <input id="adaptive" name="Grid" type="radio" value="Adaptive"> Адаптивная
-          </p>
-          <p>
-            <label  for="fixed">Фиксированная</label>
-            <img src="img/radio-off.svg" width="25" height="25" alt="Button">
-            <input id="fixed" name="Grid" type="radio" value="Fixed"> Фиксированная
-          </p>
-          <p>
+          <ul>
+            <li class="filter-option">
+              <label for="adaptive">Адаптивная</label>
+
+              <input id="adaptive" name="Grid" type="radio" value="Adaptive"> Адаптивная
+              </li>
+
+            <li class="filter-option">
+              <label  for="fixed">Фиксированная</label>
+
+              <input id="fixed" name="Grid" type="radio" value="Fixed"> Фиксированная
+            </li>
+
+          <li class="filter-option">
             <label for="resin">Резиновая</label>
-            <img src="img/radio-off.svg" width="25" height="25" alt="Button">
+
             <input id="resin" name="Grid" type="radio" value="Resin"> Резиновая
-          </p>
+          </li>
+        </ul>
+
         </fieldset>
 
         <fieldset>
+
           <legend>Особенности</legend>
-            <p>
-              <img src="img/checkbox-on.svg" width="25" height="25" alt="Слайдер">
+            <ul>
+              <li class="filter-option">
               <label for="slider">Слайдер</label>
               <input id="slider" name="Slider" type="checkbox" value="Slider" checked> Слайдер
-            </p>
+            </li>
 
-            <p>
+            <li class="filter-option">
               <label for="slider">Блок преимуществ</label>
-              <img src="img/checkbox-off.svg" width="25" height="25" alt="Блок преимуществ">
               <input id="advantages" name="advantages" type="checkbox" value="advantages"> Блок преимуществ
-            </p>
+            </li>
 
-            <p>
+            <li class="filter-option">
               <label for="news">Новости</label>
-              <img src="img/checkbox-on.svg" width="25" height="25" alt="Новости">
               <input id="news" name="Resin" type="checkbox" value="news" checked> Новости
-            </p>
+            </li>
 
-            <p>
+            <li class="filter-option">
               <label for="gallery">Галерея</label>
-              <img src="img/checkbox-off.svg" width="25" height="25" alt="Галерея">
               <input id="gallery" name="gallery" type="checkbox" value="gallery"> Галерея
-            </p>
+            </li>
 
-            <p>
+            <li class="filter-option">
               <label for="cart">Корзина</label>
-              <img src="img/checkbox-off.svg" width="25" height="25" alt="Корзина">
               <input id="cart" name="cart" type="checkbox" value="cart"> Корзина
-            </p>
+            </li>
+          </ul>
 
-            <button class="button">Показать</button>
+          <button class="button">Показать</button>
 
         </fieldset>
         <button class="button">Показать</button>
@@ -201,20 +200,6 @@
       </div>
     </main>
 
-    <section>
-      <h2 class="modal-title">Напишите нам</h2>
-      <img src="img/сlose-cross.svg" alt="close window">
-      <label for="name">Ваше имя:</label>
-      <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
-
-      <label for="email">Ваш email:</label>
-      <input id="email" type="text" name="email" value="" placeholder="email@example.com">
-
-      <label for="text">Текст письма</label>
-      <input id="text" type="text" name="text" value="" placeholder="в свободной форме">
-      <button class="button">Отправить</button>
-    </section>
-
     <footer class="main-footer">
       <ul class="footer-social">
         <li>
@@ -230,5 +215,19 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
       </footer>
+
+      <section>
+        <h2 class="modal-title">Напишите нам</h2>
+        <img src="img/сlose-cross.svg" alt="close window">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+
+        <label for="email">Ваш email:</label>
+        <input id="email" type="text" name="email" value="" placeholder="email@example.com">
+
+        <label for="text">Текст письма</label>
+        <input id="text" type="text" name="text" value="" placeholder="в свободной форме">
+        <button class="button">Отправить</button>
+      </section>
     </body>
   </html>
