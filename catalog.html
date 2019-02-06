@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -14,7 +17,7 @@
       <ul>
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li class="shop-current"><a href="nerds-catalog.psd">Магазин</a></li>
+        <li><a class="active_page" href="nerds-catalog.psd">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="cart">
@@ -33,7 +36,7 @@
       <form class="product-filter" action="#" method="get">
 
         <fieldset>
-          <legend>Стоимость</legend>
+          <legend class="legend-title">Стоимость</legend>
           <ul>
             <!--Здесь будет ползунок-->
             <li class="filter-option">
@@ -49,63 +52,74 @@
         </fieldset>
 
         <fieldset>
-          <legend>Сетка</legend>
+          <legend class="legend-title">Сетка</legend>
           <ul>
             <li class="filter-option">
-              <label for="adaptive">Адаптивная</label>
-
-              <input id="adaptive" name="Grid" type="radio" value="Adaptive"> Адаптивная
-              </li>
-
-            <li class="filter-option">
-              <label  for="fixed">Фиксированная</label>
-
-              <input id="fixed" name="Grid" type="radio" value="Fixed"> Фиксированная
+              <label>
+                <input name="Adaptive" type="radio" value="Adaptive" checked>
+                <span class="radio_button active-radio_button"></span>
+              Адаптивная
+              </label>
             </li>
 
-          <li class="filter-option">
-            <label for="resin">Резиновая</label>
+            <li class="filter-option">
+              <label>
+                <input name="fixed" type="radio" value="fixed">
+                <span class="radio_button"></span>
+              Фиксированная
+              </label>
+            </li>
 
-            <input id="resin" name="Grid" type="radio" value="Resin"> Резиновая
-          </li>
-        </ul>
+            <li class="filter-option">
+              <label>
+                <input name="resin" type="radio" value="resin">
+                <span class="radio_button"></span>
+              Резиновая
+              </label>
+            </li>
+          </ul>
 
         </fieldset>
 
         <fieldset>
 
-          <legend>Особенности</legend>
+          <legend class="legend-title">Особенности</legend>
             <ul>
               <li class="filter-option">
-              <label for="slider">Слайдер</label>
-              <input id="slider" name="Slider" type="checkbox" value="Slider" checked> Слайдер
+                <label>
+                  <input id="slider" name="Slider" type="checkbox" value="Slider" checked> Слайдер
+                </label>
+              </li>
+
+              <li class="filter-option">
+                <label>
+                 <input id="advantages" name="advantages" type="checkbox" value="advantages"> Блок преимуществ
+               </label>
+              </li>
+
+            <li class="filter-option">
+              <label>
+                <input id="news" name="Resin" type="checkbox" value="news" checked> Новости
+              </label>
             </li>
 
             <li class="filter-option">
-              <label for="slider">Блок преимуществ</label>
-              <input id="advantages" name="advantages" type="checkbox" value="advantages"> Блок преимуществ
+              <label>
+                <input id="gallery" name="gallery" type="checkbox" value="gallery"> Галерея
+              </label>
             </li>
 
             <li class="filter-option">
-              <label for="news">Новости</label>
-              <input id="news" name="Resin" type="checkbox" value="news" checked> Новости
-            </li>
-
-            <li class="filter-option">
-              <label for="gallery">Галерея</label>
-              <input id="gallery" name="gallery" type="checkbox" value="gallery"> Галерея
-            </li>
-
-            <li class="filter-option">
-              <label for="cart">Корзина</label>
-              <input id="cart" name="cart" type="checkbox" value="cart"> Корзина
+              <label>
+                <input id="cart" name="cart" type="checkbox" value="cart"> Корзина
+              </label>
             </li>
           </ul>
 
-          <button class="button">Показать</button>
+
 
         </fieldset>
-        <button class="button">Показать</button>
+        <button class="button button-filter">Показать</button>
       </form>
     </section>
 
@@ -116,7 +130,7 @@
             <div class="template">
               <img src="img/product1.jpg" width="360" height="576" alt="Sedona">
               <div class="template-info">
-                <a href="#">
+                <a class="catalog-item-link" href="#">
                   <h3 class="catalog-item-title">Sedona</h3>
                 </a>
                 <p class="description">Информационный сайт для туристов</p>
