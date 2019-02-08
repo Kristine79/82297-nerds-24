@@ -262,6 +262,54 @@ td.digits  {
 }
 
 
+/*Сетка*/
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-list {
+  display: flex;
+   justify-content: space-between;
+ }
+
+.main-footer {
+  display: flex;
+justify-content: space-around;
+}
+
+.catalog {
+  width: 800px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
