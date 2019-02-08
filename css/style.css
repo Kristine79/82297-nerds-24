@@ -8,6 +8,77 @@ body {
   background-color: #ffffff;
 }
 
+
+/* Фильтр */
+
+.radio_button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position:relative;
+
+}
+.active-radio_button::before {
+  content: '';
+  display: none;
+  width: 1px;
+  height: 1px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: auto;
+  position:absolute;
+  left: 2px;
+  bottom: 2px;
+}
+input:checked + .active-radio_button::before {
+  display: inline-block;
+}
+input {
+  display: none;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position:relative;
+
+}
+.active-checkbox::before {
+  content: '';
+  display: none;
+  width: 1px;
+  height: 1px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: auto;
+  position:absolute;
+  left: 2px;
+  bottom: 2px;
+}
+input:checked + .active-checkbox::before {
+  display: inline-block;
+}
+input {
+  display: none;
+}
+
+
+
+
+
+
+
 a {
   text-decoration: none;
 }
@@ -190,52 +261,6 @@ td.digits  {
   line-height: 20px;
 }
 
-
-/* Фильтр */
-.radio_button {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 2px solid black;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  position:relative;
-
-}
-.active-radio_button::before {
-  content: '';
-  display: none;
-  width: 1px;
-  height: 1px;
-  border: 2px solid black;
-  border-radius: 50%;
-  background-color: black;
-  margin-left: auto;
-  position:absolute;
-  left: 2px;
-  bottom: 2px;
-}
-input:checked + .active-radio_button::before {
-  display: inline-block;
-}
-input {
-  display: none;
-}
-
-
-
-.button-filter {
-  background-color:#eeeeee;
-}
-
-.button-filter:hover {
-  background-color: #dfdfdf;
-}
-
-.button-filter:hover {
-  background-color: #d5d5d5;
-}
 
 
 
