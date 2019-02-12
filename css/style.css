@@ -9,6 +9,9 @@ body {
 }
 
 
+
+
+
 /* Фильтр */
 
 .radio_button {
@@ -20,8 +23,8 @@ body {
   text-align: center;
   vertical-align: middle;
   position:relative;
-
 }
+
 .active-radio_button::before {
   content: '';
   display: none;
@@ -35,9 +38,11 @@ body {
   left: 2px;
   bottom: 2px;
 }
+
 input:checked + .active-radio_button::before {
   display: inline-block;
 }
+
 input {
   display: none;
 }
@@ -66,6 +71,7 @@ input {
   left: 2px;
   bottom: 2px;
 }
+
 input:checked + .active-checkbox::before {
   display: inline-block;
 }
@@ -73,23 +79,24 @@ input {
   display: none;
 }
 
-
-
-
-
-
-
 a {
   text-decoration: none;
 }
 
+.wrapper {
+  width:1100px;
+  padding-right:20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
 .main-nav {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   font-weight: 500;
   text-transform: uppercase;
-}
+  }
+
 
 .menu-links, .catalog-list {
   list-style: none;
@@ -99,6 +106,25 @@ a {
 .cart a {
   color: #000000;
 }
+
+.cart .cart-link {
+  position: relative;
+  padding-left: 60px;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  width: 16px;
+  height: 18px;
+
+  background-image: url("img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .main-nav a:hover,
 .main-nav a:focus,
@@ -259,23 +285,30 @@ td.digits  {
   line-height: 20px;
 }
 
-
 /*Сетка*/
+.main-nav {
+  padding-top: 43px;
+}
 
 .main-nav {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items:  center;
-  background-color: grey;
+  background-color: #eeeeee;
  }
 
-.main-header {
-  padding-top: 49px
+
+
+ .menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
 }
- .main-nav {
-  padding-bottom: 18px;
-  padding-top: 34px
- }
+
+
+
+
 
 .services-list {
   display: flex;
@@ -341,7 +374,10 @@ background-color: yellow;
   background-color: grey;
   padding-bottom: 80px;
   padding-top: 80px;
-  margin:0;
+}
+
+.service-image {
+  display: block;
 }
 
 .catalog-item {
@@ -351,6 +387,9 @@ background-color: yellow;
   background-color: red;
 }
 
+.social-button {
+  display: inline-block;
+}
 
 
 
