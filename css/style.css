@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -9,8 +9,23 @@ body {
 }
 
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* Фильтр */
 
@@ -84,12 +99,16 @@ a {
 }
 
 .wrapper {
-  width:1100px;
+  width:1160px;
   padding-right:20px;
   padding-left: 20px;
   margin: 0 auto;
 }
+
+
 .main-nav {
+
+  font-family: "Roboto medium", Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -97,9 +116,12 @@ a {
   text-transform: uppercase;
   }
 
-
-.menu-links, .catalog-list {
+.menu-links, .catalog-list, .cart  {
   list-style: none;
+}
+
+.logo {
+  padding-right: 0px;
 }
 
 .main-nav a,
@@ -108,21 +130,25 @@ a {
 }
 
 .cart .cart-link {
-  position: relative;
-  padding-left: 60px;
+   position: relative;
+  padding-left: 50px;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .cart-link::before {
-  content: "";
+content: "";
   position: absolute;
-  top: 50%;
-  left: 24px;
+
   width: 16px;
   height: 18px;
 
-  background-image: url("img/cart-icon.svg");
+  background-image: url("img/insta-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+
 }
 
 
@@ -159,6 +185,7 @@ a {
 
 .services-list {
   list-style: none;
+  margin:0;
 }
 
 .services-item {
@@ -169,6 +196,10 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.service-text {
+  margin-bottom: 25px;
 }
 
 .features-name {
@@ -187,12 +218,16 @@ td.digits  {
 }
 
 .button {
-  font: inherit;
+  font-family: "Roboto medium", Arial, sans-serif;
+  color: #ffffff;
   text-align: center;
-  color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .button-red {
@@ -286,28 +321,26 @@ td.digits  {
 }
 
 /*Сетка*/
-.main-nav {
-  padding-top: 43px;
+
+.main-header {
+background-color: #eeeeee;
+padding-top:20px;
+
+
 }
 
 .main-nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items:  center;
-  background-color: #eeeeee;
+  align-items: center;
  }
-
-
 
  .menu-links {
   display: flex;
   flex-wrap: wrap;
   width: 440px;
 }
-
-
-
 
 
 .services-list {
@@ -322,20 +355,21 @@ td.digits  {
 .main-footer {
   display: flex;
   justify-content: space-around;
+  background-color:yellow;
 }
 
-.footer-social {
-  display:flex;
+.footer-social  {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: red;
-}
+  width: 170px;
+  padding-right: 140px;
 
-.social-button {
-  padding-right: 12px;
 }
 
 .footer-text {
-  width:550px;
+padding-right:225px;
+
 }
 
 .catalog {
@@ -358,6 +392,7 @@ td.digits  {
 .menu-links {
   display: flex;
   justify-content: space-around;
+  padding:0;
 }
 
 .menu-links li {
@@ -367,11 +402,11 @@ td.digits  {
 .main-footer {
 padding-top: 69px;
 padding-bottom: 70px;
-background-color: yellow;
+
 }
 
 .services-list {
-  background-color: grey;
+
   padding-bottom: 80px;
   padding-top: 80px;
 }
