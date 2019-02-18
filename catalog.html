@@ -88,7 +88,7 @@
           <fieldset>
             <legend class="legend-title">Особенности</legend>
             <ul>
-              <li class=" filter-image">
+              <li class="filter-image">
                 <label>
                   <input id="slider" name="Slider" type="checkbox" value="Slider" checked>
                   <span class="checkbox active-checkbox"></span>
@@ -274,22 +274,25 @@
 
     <section class="contact">
       <h2 class="contact-title">Напишите нам</h2>
-      <img src="img/сlose-cross.svg" alt="close window">
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="contact-item">
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="contact-item">
-          <label for="email">Ваш email:</label>
-          <input id="email" type="text" name="email" value="" placeholder="email@example.com">
-        </p>
+        <div class="contact-wraper">
+          <p class="contact-item class="test">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия" >
+          </p>
+          <p class="contact-item">
+            <label for="email">Ваш email:</label>
+            <input id="email" type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="contact-item">
           <label for="text">Текст письма</label>
-          <input id="text" type="text" name="text" value="" placeholder="в свободной форме">
+          <input id="text" type="textarea" name="text" value="" placeholder="в свободной форме">
         </p>
-        <button class="button">Отправить</button>
+        <button class="button button-red button-contact ">Отправить</button>
+        <img src="img/сlose-cross.svg" alt="close window">
       </form>
     </section>
+
   </body>
   </html>
