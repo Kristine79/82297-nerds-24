@@ -64,7 +64,7 @@
         <li class="services-item">
           <img class="service-image" src="img/service1.jpg" width="300" height="146" alt="Вебсайты">
           <h3>Вебсайты</h3>
-          <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <p class="service-text">Мир никогда не  будет &nbsp; прежним  &nbsp;&nbsp; после  того как увидит ваш сайт!</p>
           <a class="button button-red button-hover" href="#">Заказать</a>
         </li>
         <li class="services-item">
@@ -133,8 +133,6 @@
   </div>
   -->
 
-
-
 <footer class="main-footer">
   <div class="footer-container">
     <ul class="footer-social">
@@ -149,20 +147,28 @@
   </div>
 </footer>
 
-<!--<section>
-  <h2 class="modal-title">Напишите нам</h2>
-  <img src="img/сlose-cross.svg" alt="close window">
-  <label for="name">Ваше имя:</label>
-  <input id="name" type="text" name="name" value="" placeholder="Имя Фамилия">
+ <section class="contact contact-form">
+      <h2 class="contact-title">Напишите нам</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="contact-wraper">
+          <p class="contact-item" >
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия" >
+          </p>
+          <p class="contact-item">
+            <label for="email">Ваш email:</label>
+            <input id="email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p class="contact-item">
+            <label for="text">Текст письма</label>
+            <input id="text" type="textarea" name="text" placeholder="в свободной форме">
+          </p>
+        <button class="button button-red button-contact ">Отправить</button>
+        <button class="contact-close" type="submit">Войти</button>
+        </div>
+      </form>
+    </section>
 
-  <label for="email">Ваш email:</label>
-  <input id="email" type="text" name="email" value="" placeholder="email@example.com">
-
-  <label for="text">Текст письма</label>
-  <input id="text" type="text" name="text" value="" placeholder="в свободной форме">
-  <button class="button">Отправить</button>
-</section>
--->
-</div>
+  </div>
 </body>
 </html>
