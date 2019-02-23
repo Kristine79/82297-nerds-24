@@ -58,10 +58,10 @@
                 <legend class="legend-title">Сетка</legend>
                 <ul>
                   <li class="filter-option">
-                    <label>
+                    <label class="filter-text">
                       <input class="checkboxfilter visually-hidden" name="Adaptive" type="radio" value="Adaptive" checked>
                       <span class="radio_button active-radio_button"></span>
-                      Адаптивная
+                      <span class="filter-name">Адаптивная</span>
                     </label>
                   </li>
 
@@ -69,7 +69,7 @@
                     <label>
                       <input class="checkboxfilter visually-hidden" name="fixed" type="radio" value="fixed">
                       <span class="radio_button"></span>
-                      Фиксированная
+                      <span class="filter-name">Фиксированная</span>
                     </label>
                   </li>
 
@@ -77,7 +77,7 @@
                     <label>
                       <input class="checkboxfilter visually-hidden"  name="resin" type="radio" value="resin">
                       <span class="radio_button"></span>
-                      Резиновая
+                      <span class="filter-name">Резиновая</span>
                     </label>
                   </li>
                 </ul>
@@ -90,7 +90,7 @@
                     <label class="filter-item">
                       <input class="checkboxfilter visually-hidden"  id="slider" name="Slider" type="checkbox" value="Slider" checked>
                       <span class="checkbox active-checkbox"></span>
-                      Слайдер
+                      <span class="filter-name">Слайдер</span>
                     </label>
                   </li>
 
@@ -98,7 +98,7 @@
                     <label class="filter-item">
                      <input class="checkboxfilter visually-hidden" id="advantages" name="advantages" type="checkbox" value="advantages">
                      <span class="checkbox"></span>
-                     Блок преимуществ
+                     <span class="filter-name">Блок преимуществ</span>
                    </label>
                  </li>
 
@@ -106,7 +106,7 @@
                   <label class="filter-item">
                     <input class="checkboxfilter visually-hidden" id="news" name="Resin" type="checkbox" value="news" checked>
                     <span class="checkbox active-checkbox"></span>
-                    Новости
+                    <span class="filter-name">Новости</span>
                   </label>
                 </li>
 
@@ -114,7 +114,7 @@
                   <label class="filter-item">
                     <input class="checkboxfilter visually-hidden"  id="gallery" name="gallery" type="checkbox" value="gallery">
                     <span class="checkbox"></span>
-                    Галерея
+                    <span class="filter-name">Галерея</span>
                   </label>
                 </li>
 
@@ -122,7 +122,7 @@
                   <label class="filter-item">
                     <input class="checkboxfilter visually-hidden"  id="cart" name="cart" type="checkbox" value="cart">
                     <span class="checkbox"></span>
-                    Корзина
+                    <span class="filter-name">Корзина</span>
                   </label>
                 </li>
               </ul>
@@ -133,104 +133,104 @@
         </section>
 
 
-<!--
-    <section class="sort">
-      <h2 class="sort-header">Сортировать</h2>
-      <ul class="sort-items">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
-      </ul>
-      <div class="sort-icons">
-        <a class="sort-down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Иконка вверх"></a>
-        <a class="sort-up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Иконка вниз"></a>
-      </div>
-    </section>
-  -->
-
-
   <section class="catalog">
     <h2 class="visually-hidden">Список товаров</h2>
-    <ul class="catalog-list">
-      <li class="product catalog-item">
-        <div class="template">
-          <img class="product-image" src="img/product1.jpg" width="360" height="576" alt="Sedona">
-          <div class="template-info">
-            <a class="catalog-item-link" href="#">
-              <h3 class="catalog-item-title">Sedona</h3>
-            </a>
-            <p class="description">Информационный сайт для туристов</p>
-            <a class="button button-red button-cart" href="#">9 900 ₽</a>
-          </div>
+    <div class="sort">
+      <h3 class="sort-header">Сортировать</h3>
+      <!--<div class="sort-inner">-->
+        <ul class="sort-items">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+        </ul>
+        <div class="sort-icons">
+          <a class="sort-down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Иконка вверх"></a>
+          <a class="sort-up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Иконка вниз"></a>
         </div>
-      </li>
+    </div>
 
-      <li class="product catalog-item">
-        <div class="template">
-          <img src="img/product2.jpg" width="360" height="576" alt="Pink">
-          <div class="template-info">
-            <a class="catalog-item-link" href="#">
-              <h3 class="catalog-item-title">Pink</h3>
-            </a>
-            <p class="description"></p>
-            <a class="button" href="#"></a>
+      <ul class="catalog-list">
+        <li class="product catalog-item">
+          <div class="template">
+            <img class="product-image" src="img/product1.jpg" width="360" height="576" alt="Sedona">
+            <div class="template-info">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Sedona</h3>
+              </a>
+              <p class="description">Информационный сайт для туристов</p>
+              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
 
-      <li class="product catalog-item">
-        <div class="template">
-          <img src="img/product3.jpg" width="360" height="576" alt="Borodinsky">
-          <div class="template-info">
-            <a class="catalog-item-link" href="#">
-              <h3 class="catalog-item-title">Borodinsky</h3>
-            </a>
-            <p class="description"></p>
-            <a class="button" href="#"></a>
+        <li class="product catalog-item">
+          <div class="template">
+            <img src="img/product2.jpg" width="360" height="576" alt="Pink">
+            <div class="template-info">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Pink App</h3>
+              </a>
+              <p class="description">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
 
-      <li class="product catalog-item">
-        <div class="template">
-          <img src="img/product4.jpg" width="360" height="576" alt="Mishka">
-          <div class="template-info">
-            <a class="catalog-item-link" href="#">
-              <h3 class="catalog-item-title">Mishka</h3>
-            </a>
-            <p class="description"></p>
-            <a class="button" href="#">₽</a>
+        <li class="product catalog-item">
+          <div class="template">
+            <img src="img/product3.jpg" width="360" height="576" alt="Borodinsky">
+            <div class="template-info">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Barbershop</h3>
+              </a>
+              <p class="description">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
 
-      <li class="product catalog-item">
-        <div class="template">
-          <img src="img/product5.jpg" width="360" height="576" alt="A+">
-          <div class="template-info">
-            <a class="catalog-item-link" href="#">
-              <h3 class="catalog-item-title">A+</h3>
-            </a>
-            <p class="description"></p>
-            <a class="button" href="#"></a>
+        <li class="product catalog-item">
+          <div class="template">
+            <img src="img/product4.jpg" width="360" height="576" alt="Mishka">
+            <div class="template-info">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Mishka</h3>
+              </a>
+              <p class="description">Интернет-магазин вязаных игрушек</p>
+              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
 
-      <li class="product catalog-item">
-        <div class="template">
-          <img src="img/product6.jpg" width="360" height="576" alt="Кваст">
-          <div class="template-info">
-            <a class="catalog-item-link" href="#">
-              <h3 class="catalog-item-title">Кваст</h3>
-            </a>
-            <p class="description"></p>
-            <a class="button" href="#"></a>
+        <li class="product catalog-item">
+          <div class="template">
+            <img src="img/product5.jpg" width="360" height="576" alt="A+">
+            <div class="template-info">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">A Plus</h3>
+              </a>
+              <p class="description">Лендинг курсов повышения квалификации</p>
+              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </section>
+        </li>
+
+        <li class="product catalog-item">
+          <div class="template">
+            <img src="img/product6.jpg" width="360" height="576" alt="Кваст">
+            <div class="template-info">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Кваст</h3>
+              </a>
+              <p class="description">Промо-сайт производителя крафтового кваса</p>
+              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
 
 
 <!--
@@ -270,27 +270,27 @@
   </div>
 </footer>
 
-    <section class="contact contact-form">
-      <h2 class="contact-title">Напишите нам</h2>
-      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="contact-wraper">
-          <p class="contact-item" >
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия" >
-          </p>
-          <p class="contact-item">
-            <label for="email">Ваш email:</label>
-            <input id="email" type="text" name="email" placeholder="email@example.com">
-          </p>
-          <p class="contact-item">
-            <label for="text">Текст письма</label>
-            <input id="text" type="textarea" name="text" placeholder="В свободной форме">
-        </p>
-        <button class="button button-red button-contact ">Отправить</button>
-        <button class="contact-close" type="submit">Войти</button>
-        </div>
-      </form>
-    </section>
+<section class="contact contact-form">
+  <h2 class="contact-title">Напишите нам</h2>
+  <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="contact-wraper">
+      <p class="contact-item" >
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия" >
+      </p>
+      <p class="contact-item">
+        <label for="email">Ваш email:</label>
+        <input id="email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p class="contact-item">
+        <label for="text">Текст письма</label>
+        <input id="text" type="textarea" name="text" placeholder="В свободной форме">
+      </p>
+      <button class="button button-red button-contact ">Отправить</button>
+      <button class="contact-close" type="submit">Войти</button>
+    </div>
+  </form>
+</section>
 
 </body>
 </html>
