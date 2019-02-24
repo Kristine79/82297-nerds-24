@@ -59,15 +59,15 @@
                 <ul>
                   <li class="filter-option">
                     <label class="filter-text">
-                      <input class="checkboxfilter visually-hidden" name="Adaptive" type="radio" value="Adaptive" checked>
-                      <span class="radio_button active-radio_button"></span>
+                      <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="Adaptive" checked>
+                      <span class="radio_button"></span>
                       <span class="filter-name">Адаптивная</span>
                     </label>
                   </li>
 
                   <li class="filter-option">
                     <label>
-                      <input class="checkboxfilter visually-hidden" name="fixed" type="radio" value="fixed">
+                      <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="fixed">
                       <span class="radio_button"></span>
                       <span class="filter-name">Фиксированная</span>
                     </label>
@@ -75,7 +75,7 @@
 
                   <li class="filter-option">
                     <label>
-                      <input class="checkboxfilter visually-hidden"  name="resin" type="radio" value="resin">
+                      <input class="radiofilter  visually-hidden"  name="checkbox-grid" type="radio"  value="resin">
                       <span class="radio_button"></span>
                       <span class="filter-name">Резиновая</span>
                     </label>
@@ -89,7 +89,7 @@
                   <li class="filter-image">
                     <label class="filter-item">
                       <input class="checkboxfilter visually-hidden"  id="slider" name="Slider" type="checkbox" value="Slider" checked>
-                      <span class="checkbox active-checkbox"></span>
+                      <span class="checkbox"></span>
                       <span class="filter-name">Слайдер</span>
                     </label>
                   </li>
@@ -105,7 +105,7 @@
                  <li class="filter-image ">
                   <label class="filter-item">
                     <input class="checkboxfilter visually-hidden" id="news" name="Resin" type="checkbox" value="news" checked>
-                    <span class="checkbox active-checkbox"></span>
+                    <span class="checkbox"></span>
                     <span class="filter-name">Новости</span>
                   </label>
                 </li>
@@ -137,93 +137,92 @@
     <h2 class="visually-hidden">Список товаров</h2>
     <div class="sort">
       <h3 class="sort-header">Сортировать</h3>
-      <!--<div class="sort-inner">-->
-        <ul class="sort-items">
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По названию</a></li>
-        </ul>
-        <div class="sort-icons">
-          <a class="sort-down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Иконка вверх"></a>
-          <a class="sort-up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Иконка вниз"></a>
-        </div>
+      <ul class="sort-items">
+        <li><a href="#" class="active-sort-item">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По названию</a></li>
+      </ul>
+      <div class="sort-icons">
+        <a class="sort-down sort-down-active" href="#"></a>
+        <a class="sort-up" href="#"></a>
+      </div>
     </div>
 
       <ul class="catalog-list">
-        <li class="product catalog-item">
+        <li class="above-item-block catalog-item">
           <div class="template">
             <img class="product-image" src="img/product1.jpg" width="360" height="576" alt="Sedona">
             <div class="template-info">
               <a class="catalog-item-link" href="#">
                 <h3 class="catalog-item-title">Sedona</h3>
               </a>
-              <p class="description">Информационный сайт для туристов</p>
-              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+              <p class="description"><span class="desc-text">Информационный сайт для туристов</span></p>
+              <a class="button button-red button-cart" href="#">9 900 Руб.</a>
             </div>
           </div>
         </li>
 
-        <li class="product catalog-item">
+        <li class="above-item-block catalog-item">
           <div class="template">
-            <img src="img/product2.jpg" width="360" height="576" alt="Pink">
+            <img  class="product-image"src="img/product2.jpg" width="360" height="576" alt="Pink">
             <div class="template-info">
               <a class="catalog-item-link" href="#">
                 <h3 class="catalog-item-title">Pink App</h3>
               </a>
               <p class="description">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+              <a class="button button-red button-cart" href="#">9 900 Руб.</a>
             </div>
           </div>
         </li>
 
-        <li class="product catalog-item">
+        <li class="above-item-block catalog-item">
           <div class="template">
-            <img src="img/product3.jpg" width="360" height="576" alt="Borodinsky">
+            <img class="product-image" src="img/product3.jpg" width="360" height="576" alt="Borodinsky">
             <div class="template-info">
               <a class="catalog-item-link" href="#">
                 <h3 class="catalog-item-title">Barbershop</h3>
               </a>
               <p class="description">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+              <a class="button button-red button-cart" href="#">9 900 Руб.</a>
             </div>
           </div>
         </li>
 
-        <li class="product catalog-item">
+        <li class="above-item-block catalog-item">
           <div class="template">
-            <img src="img/product4.jpg" width="360" height="576" alt="Mishka">
+            <img class="product-image" src="img/product4.jpg" width="360" height="576" alt="Mishka">
             <div class="template-info">
               <a class="catalog-item-link" href="#">
                 <h3 class="catalog-item-title">Mishka</h3>
               </a>
               <p class="description">Интернет-магазин вязаных игрушек</p>
-              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+              <a class="button button-red button-cart" href="#">9 900 Руб.</a>
             </div>
           </div>
         </li>
 
-        <li class="product catalog-item">
+        <li class="above-item-block catalog-item">
           <div class="template">
-            <img src="img/product5.jpg" width="360" height="576" alt="A+">
+            <img class="product-image" src="img/product5.jpg" width="360" height="576" alt="A+">
             <div class="template-info">
               <a class="catalog-item-link" href="#">
                 <h3 class="catalog-item-title">A Plus</h3>
               </a>
               <p class="description">Лендинг курсов повышения квалификации</p>
-              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+              <a class="button button-red button-cart" href="#">9 900 Руб.</a>
             </div>
           </div>
         </li>
 
-        <li class="product catalog-item">
+        <li class="above-item-block catalog-item">
           <div class="template">
-            <img src="img/product6.jpg" width="360" height="576" alt="Кваст">
+            <img class="product-image" src="img/product6.jpg" width="360" height="576" alt="Кваст">
             <div class="template-info">
               <a class="catalog-item-link" href="#">
                 <h3 class="catalog-item-title">Кваст</h3>
               </a>
               <p class="description">Промо-сайт производителя крафтового кваса</p>
-              <a class="button button-red button-cart" href="#">9 900 ₽</a>
+              <a class="button button-red button-cart" href="#">9 900 Руб.</a>
             </div>
           </div>
         </li>
