@@ -134,20 +134,17 @@
 
   </div>
 </main>
-<!--
-<div class="map">
-  <div class="map-container">
-    <div class="map-contacts">
 
+<div class="map">
+  <div class="map-wrapper wrapper">
+    <div class="map-contacts">
     <h3 class="map-title">NЁRDS DESIGN STUDIO</h3>
     <address><p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p><p> тел. +7 (812) 275-75-75</p></address>
-    <a class="button button-red" href="#">Напишите нам</a>
+    <a class="button button-red modal-write-us map-button" href="#">Напишите нам</a>
   </div>
-
-    <img src="img/map-marker.png" alt="marker">
+    <img class="map-marker" src="img/map-marker.png" alt="marker">
   </div>
 </div>
--->
 
 
 <footer class="main-footer">
@@ -177,9 +174,9 @@
         <input id="email" type="text" name="email" placeholder="email@example.com">
       </p>
       <p class="contact-item">
-        <label for="text">Текст письма</label>
-        <input id="text" type="textarea" name="text" placeholder="в свободной форме">
-      </p>
+        <label for="email">Текст письма:</label>
+        <textarea class="letter-text" rows="6" cols="92" name="text">В свободной форме</textarea>
+     </p>
       <button class="button button-red button-contact ">Отправить</button>
       <button class="contact-close" type="submit">Войти</button>
     </div>
@@ -187,5 +184,66 @@
 </section>
 
 </div>
+
+<script>
+  var link = document.querySelector(".modal-write-us");
+  var popup = document.querySelector(".contact-form");
+  var close = popup.querySelector(".contact-close");
+  var login = popup.querySelector("[name=name]");
+  var form = popup.querySelector("form");
+  var password = popup.querySelector("[name=email]");
+  var password = popup.querySelector("[name=text]");
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("contact-show");
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("contact-show");
+    popup.classList.remove("contact-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.remove("contact-error");
+
+    if (storage) {
+      login.value = storage;
+      password.focus();
+    } else {
+      login.focus();
+    }
+    });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !password.value) {
+      evt.preventDefault();
+      popup.classList.add("contact-error");
+      console.log("Нужно ввести логин и пароль");
+
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("name", login.value);
+    }
+    }
+  });
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("contact-show")) {
+        popup.classList.remove("contact-show");
+        popup.classList.remove("contact-error");
+      }
+    }
+  });
+</script>
 </body>
 </html>

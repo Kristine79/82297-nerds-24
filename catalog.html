@@ -38,12 +38,11 @@
           <form class="product-filter" action="#" method="get">
             <fieldset class="filter-block">
               <legend class="legend-title">Стоимость</legend>
-              <ul>
-               <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" ></div>
-                  </div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
                 </div>
@@ -51,7 +50,6 @@
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                   <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
                 </div>
-
               </fieldset>
 
               <fieldset>
@@ -250,7 +248,8 @@
   -->
 
 
-</div>
+    </div>
+  </div>
 </main>
 
 
@@ -282,9 +281,12 @@
         <input id="email" type="text" name="email" placeholder="email@example.com">
       </p>
       <p class="contact-item">
-        <label for="text">Текст письма</label>
-        <input id="text" type="textarea" name="text" placeholder="В свободной форме">
-      </p>
+        <textarea rows="6" cols="85" name="text">Текст письма</textarea>
+       <!--<label for="text">Текст письма</label>
+        <input id="text" type="text" name="text" placeholder="В свободной форме">
+      </p>-->
+     </p>
+
       <button class="button button-red button-contact ">Отправить</button>
       <button class="contact-close" type="submit">Войти</button>
     </div>

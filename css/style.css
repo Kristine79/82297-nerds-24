@@ -58,6 +58,14 @@ a {
   margin-right: 200px;
 }
 
+.logo:hover {
+opacity: 0.8;
+}
+
+.logo:active {
+opacity: 0.3;
+}
+
 .main-nav a,
 .menu-links a,
 .cart a {
@@ -306,6 +314,7 @@ padding-top:45px;
   border-bottom: 2px solid #eeeeee;
   padding-left: 25px;
   padding-right: 25px;
+  margin: 0 20px 82px;
 }
 
 .partners li {
@@ -378,7 +387,6 @@ padding-top:45px;
 /* Каталог */
 
 .page-title {
-
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -390,8 +398,7 @@ padding-top:45px;
   margin:0;
 }
 
-.legend-title,
- {
+.legend-title, {
   font-size: 18px;
   font-weight: bold;
   line-height: 30;
@@ -629,7 +636,6 @@ padding-top:45px;
   opacity: .3;
 }
 
-
 .sort-items {
   display: flex;
   justify-content: flex-end;
@@ -692,7 +698,6 @@ padding-top:45px;
 .sort .active-sort-item {
   opacity: 1;
 }
-
 
 /*Каталог*/
 
@@ -780,7 +785,6 @@ padding-top:45px;
   left: 0;
 }
 
-
 /*Блок при наведении на плитку*/
 
 .template {
@@ -821,6 +825,8 @@ padding-top:45px;
 /*Модальное окно с контактной формой*/
 
 .contact {
+  display: none;
+  position: fixed;
   top: 120px;
   width: 960px;
   height: 590px;
@@ -848,7 +854,7 @@ padding-top:45px;
   padding-bottom: 12px;
   font: inherit;
   border: 2px solid #d7dcde;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .contact-item input:focus {
@@ -877,11 +883,12 @@ padding-top:45px;
   margin-bottom: 22px;
 }
 
-input[type="textarea"] {
-  width: 760px;
-  height: 118px;
+.letter-text {
+  color: #757575;
   border: 2px solid #d7dcde;
-  padding-bottom: 90px;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-top: 8px;
 }
 
 .button-contact {
@@ -934,6 +941,56 @@ input[type="textarea"] {
  color: #fb565a;
 }
 
+/* Показ модального окна с анимацией*/
+
+.contact-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.contact-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 /*Слайдер*/
 
@@ -1072,50 +1129,48 @@ input[type="textarea"] {
 }
 
 
-/*Карта
+/*Карта*/
+
 .map {
-    min-width: 1200px;
-    background: url("../img/contacts.jpg") no-repeat;
-    background-color: #eee;
-    background-size: cover;
-    max-height: 416px;
-
-    margin-bottom: 7px;
+  background: url("../img/contacts.jpg") no-repeat;
+  background-color: #eee;
+  background-size: cover;
+  max-height: 416px;
+  margin-bottom: 7px;
 }
-.map-container {
-height: 100%;
 
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .map-contacts {
-    background-color: #fff;
-    width: 270px;
-    min-height: 270px;
-    padding: 37px 0 0 50px;
-    margin: 53px 0 0 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.map-wrapper {
+  height: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
   }
 
-  .map-contacts p{
-    color: #666;
-    margin-right: 60px;
-    line-height: 18px;
-    max-width: 210px;
-    font-style: normal;
-  }
+.map-contacts {
+  position: relative;
+  background-color: #fff;
+  width: 270px;
+  min-height: 270px;
+  padding: 37px 0 0 50px;
+  margin: 53px 0 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-  .map-button {
-        font-family: 'Roboto','Verdana',sans-serif;
-    font-weight: 500;
-    margin: 22px 0 20px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 13px 45px;
-    cursor: pointer;
-  }
-*/
+.map-contacts p{
+  color: #666;
+  margin-right: 60px;
+  line-height: 18px;
+  max-width: 210px;
+  font-style: normal;
+}
+
+.map-button {
+  margin: 22px 0 20px;
+  display: inline-block;
+  padding: 13px 45px;
+}
+
+
