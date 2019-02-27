@@ -9,8 +9,6 @@ body {
   background-color: #ffffff;
 }
 
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -58,11 +56,11 @@ a {
   margin-right: 200px;
 }
 
-.logo:hover {
+ a.logo:hover {
 opacity: 0.8;
 }
 
-.logo:active {
+  a.logo:active {
 opacity: 0.3;
 }
 
@@ -215,6 +213,7 @@ td.digits  {
 
 .button-red:active {
  background-color: #d7373b;
+ color: rgba(255, 255, 255, 0.3);
 }
 
 .button-green {
@@ -227,6 +226,7 @@ td.digits  {
 
 .button-green:active {
  background-color: #00aa62;
+ color: rgba(255, 255, 255, 0.3);
 }
 
 .button-yellow {
@@ -239,6 +239,7 @@ td.digits  {
 
 .button-yellow:active {
  background-color: #e5a722;
+ color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social  {
@@ -256,6 +257,9 @@ td.digits  {
 
 .social-button:active {
   background-color: #d7373b
+}
+.social-image:active {
+  opacity: 0.3;
 }
 
 .footer-header {
@@ -444,7 +448,6 @@ padding-top:45px;
 .range-filter {
   width: 260px;
   margin-top: 29px;
-  margin-bottom: 55px;
 }
 
 .filter-block legend {
@@ -500,6 +503,7 @@ padding-top:45px;
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -531,6 +535,7 @@ padding-top:45px;
 .radio_button {
   position:relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   border: 5px solid #a6a6a6;
@@ -541,7 +546,38 @@ padding-top:45px;
 
 .filter-name {
   display: inline-block;
+  vertical-align: middle;
   margin-left: 6px;
+}
+
+.radiofilter:checked + .radio_button::before  {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border: 3px solid #a6a6a6;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+  left: 4px;
+  bottom: 4px;
+}
+
+
+.radio_button:hover {
+  border-color: #4d4d4d;
+}
+
+.radiofilter:checked + .radio_button:hover:before{
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
+}
+
+.radio_button:disabled {
+    opacity: 0.1;
+}
+
+.radiofilter:disabled + .radio_button:hover:before{
+  opacity: 0.1;
 }
 
 /*Второй фильтр. Особенности*/
@@ -583,16 +619,19 @@ padding-top:45px;
   background-position: 0 0;
 }
 
-.radiofilter:checked + .radio_button::before  {
-  position: absolute;
-  content: '';
-  width: 4px;
-  height: 4px;
-  border: 3px solid #a6a6a6;
-  border-radius: 50%;
-  background-color: #a6a6a6;
-  left: 4px;
-  bottom: 4px;
+.checkbox:hover {
+  opacity: 0.4
+}
+
+.checkbox:checked + .checkbox:hover:before{
+  opacity: 0.4}
+
+.checkbox:disabled {
+  opacity: 0.1
+}
+
+.checkboxfilter:disabled + .checkbox:hover:before{
+  opacity: 0.1;
 }
 
 .button-filter {
@@ -1014,6 +1053,7 @@ padding-top:45px;
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -1132,7 +1172,7 @@ padding-top:45px;
 /*Карта*/
 
 .map {
-  background: url("../img/contacts.jpg") no-repeat;
+  /*background: url("../img/contacts.jpg") no-repeat;*/
   background-color: #eee;
   background-size: cover;
   max-height: 416px;
@@ -1140,8 +1180,8 @@ padding-top:45px;
 }
 
 .map-wrapper {
-  height: 100%;
-  position: relative;
+  width:1160px;
+  position: absolute;
   left: 0;
   right: 0;
   margin: auto;
@@ -1159,7 +1199,7 @@ padding-top:45px;
   left: 0;
 }
 
-.map-contacts p{
+.map-contacts p {
   color: #666;
   margin-right: 60px;
   line-height: 18px;
@@ -1168,9 +1208,14 @@ padding-top:45px;
 }
 
 .map-button {
-  margin: 22px 0 20px;
   display: inline-block;
+  vertical-align: top;
+  margin: 22px 0 20px;
   padding: 13px 45px;
 }
 
+.frame-map {
+  width: 100%;
+  border: none;
+}
 
