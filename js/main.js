@@ -5,7 +5,7 @@
   var form = popup.querySelector('form');
   var email = popup.querySelector('.email');
   var isStorageSupport = true;
-  var storage = "";
+  var storage = '';
   try {
     storage = localStorage.getItem('name');
   } catch (err) {
@@ -26,19 +26,19 @@
     } else {
       name.focus();
     }
-    });
+  });
   form.addEventListener('submit', function (evt) {
     if (!name.value || !email.value) {
       evt.preventDefault();
       popup.classList.add('contact-error');
     } else if (isStorageSupport);
+      localStorage.setItem("login", login.value);
   });
   window.addEventListener('keydown', function (evt) {
-     if (evt.keyCode === 27 && popup.classList.contains("contact-show")) {
+     if (evt.keyCode === 27 && popup.classList.contains('contact-show')) {
       evt.preventDefault();
-      if (popup.classList.contains('contact-show')) {
         popup.classList.remove('contact-show');
         popup.classList.remove('contact-error');
       }
-    }
+
   });

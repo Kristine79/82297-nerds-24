@@ -38,7 +38,7 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="product-filter" action="#" method="get">
             <fieldset class="filter-block">
-              <legend class="legend-title">Стоимость</legend>
+              <legend class="range-legend-title">Стоимость</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -54,8 +54,8 @@
                 </div>
               </fieldset>
 
-              <fieldset>
-                <legend class="legend-title">Сетка</legend>
+              <fieldset class="radio-filter-block">
+                <legend class="radio-legend-title">Сетка:</legend>
                 <ul>
                   <li class="filter-option">
                     <label class="filter-text">
@@ -83,9 +83,9 @@
                 </ul>
               </fieldset>
 
-              <fieldset>
-                <legend class="legend-title">Особенности</legend>
-                <ul>
+              <fieldset class="checkbox-filter-block">
+                <legend class="checkbox-legend-title">Особенности:</legend>
+                <ul class="filter-checkbox-list">
                   <li class="filter-image">
                     <label class="filter-item">
                       <input class="checkboxfilter visually-hidden"  id="slider" name="Slider" type="checkbox" value="Slider" checked>
