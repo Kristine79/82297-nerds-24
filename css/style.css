@@ -48,7 +48,8 @@ a {
 .catalog-list,
 .cart,
 .partners,
-.sort-items {
+.sort-items,
+.features-list {
   list-style: none;
 }
 
@@ -56,12 +57,12 @@ a {
   margin-right: 200px;
 }
 
-.logo a[href]:hover {
-  opacity: 0.8;
+.logo [href]:hover {
+  opacity: .8;
 }
 
-.logo a[href]:active {
-  opacity: 0.3;
+.logo [href]:active {
+  opacity: .3;
 }
 
 .main-nav a,
@@ -116,6 +117,9 @@ a {
   height: 18px;
   border-bottom: 2px solid red;
 }
+.services {
+  border-bottom: 2px solid #eee;
+}
 
 .services-list {
   list-style: none;
@@ -132,7 +136,7 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: black;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .service-text {
@@ -143,19 +147,24 @@ a {
 
 .menu-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding:0;
   padding-bottom: 3px;
 }
 
+.menu-links li {
+  padding-right: 45px;
+  margin-bottom: 16px;
+  max-width: 825px;
+  margin-bottom: 0;
+}
+
 .main-footer {
-  padding-top: 47px;
   padding-bottom: 70px;
 }
 
 .services-list {
   padding-bottom: 80px;
-  padding-top: 80px;
 }
 
 .service-image {
@@ -163,25 +172,32 @@ a {
 }
 
 .features-name {
+  display: inline-block;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
   color: #000000;
+  margin-bottom: 33px;
 }
 
 .features-title {
-  font-size:16px;
-  line-height:24px;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 25px;
+
 }
 
-td.digits  {
+.features-digits  {
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
-  letter-spacing: normal;
   color: #000000;
+}
+.accuracy-desc {
+font-size: 16px;
+line-height: 18px;
 }
 
 .button {
@@ -257,12 +273,6 @@ td.digits  {
   opacity: 0.3;
 }
 
-.footer-header {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 36px;
-  color: #000000;
-}
 
 /*Сетка*/
 
@@ -283,15 +293,9 @@ padding-top:45px;
   margin-bottom: 19px;
 }
 
- .menu-links {
-  display: flex;
-  flex-wrap: wrap;
-  width: 440px;
-  justify-content: space-between;
-}
-
 .services-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -371,7 +375,8 @@ padding-top:45px;
 
 .footer-header {
   display: block;
-  margin: 0 0 8px;
+  margin: 0 0 11px;
+  color: black;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -381,7 +386,8 @@ padding-top:45px;
   margin: 0;
   color: #444;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 22px;
+  padding-bottom: 7px;
 }
 
 
@@ -584,6 +590,14 @@ padding-top:45px;
 .radiofilter:disabled + .radio_button:hover:before{
   opacity: 0.1;
 }
+
+.radio_button:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 6px #2f7cc0;
+}
+
 
 /*Второй фильтр. Особенности*/
 
@@ -1051,12 +1065,13 @@ padding-top:45px;
 .slider {
   position: relative;
   background-color: #eeeeee;
+  margin-bottom: 70px;
 }
 
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 112px;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -1096,7 +1111,7 @@ padding-top:45px;
 
 .slider-item {
   display: none;
-  padding: 71px 0 88px 0;
+  padding: 68px 0 88px 0;
 }
 
 .slider-item:nth-child(1) {
@@ -1148,7 +1163,7 @@ padding-top:45px;
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -1157,7 +1172,7 @@ padding-top:45px;
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .slider-item-button {
@@ -1184,6 +1199,58 @@ padding-top:45px;
 }
 
 
+/*О студии*/
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  align-items: flex-end;
+}
+
+.features-description {
+  width: 660px;
+  margin-top: 72px;
+}
+
+.features-text {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+}
+.features-option {
+  padding-bottom: 24px;
+  padding-left: 30px;
+}
+
+.features-list .features-red-line {
+  position: relative;
+  padding-bottom: 8px;
+  padding-left: 7px;
+
+}
+
+.features-red-line::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -28px;
+  width: 25px;
+  border-bottom: 2px solid red;
+}
+
+
+.features-accuracy {
+      background: url('../img/nerds-illustration.png') no-repeat 0 0;
+    width: 380px;
+    margin: 38px 0 0;
+  }
+.feature-table {
+
 /*Карта*/
 
 .map {
@@ -1191,6 +1258,11 @@ padding-top:45px;
   background-size: cover;
   max-height: 416px;
   margin-bottom: 7px;
+}
+.map-title {
+  font-size: 18px;
+  line-height: 30px
+  font-weight: bold;
 }
 
 .map-wrapper {
@@ -1219,6 +1291,8 @@ padding-top:45px;
   line-height: 18px;
   max-width: 210px;
   font-style: normal;
+  padding-bottom: 2px;
+  padding-left: 2px;
 }
 
 .map-button {
@@ -1229,10 +1303,12 @@ padding-top:45px;
 }
 
 .frame-map {
+  display: block;
   width: 100%;
   border: none;
+  margin-bottom: 70px;
 }
 
 .map-contacts h3 {
- margin: 15px 0 27px;
+ margin: 15px 0 25px;
 }

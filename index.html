@@ -6,16 +6,17 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="main-header">
     <div class="wrapper">
       <nav class="main-nav">
-        <a href="" class="logo">
-          <img class="logo-image" src="img/nerds-logo.svg" height="65" width="160" alt="Лого">
-        </a>
+        <div class="logo">
+          <a>
+            <img class="logo-image" src="img/nerds-logo.svg" height="65" width="160" alt="Лого">
+          </a>
+        </div>
         <ul class="menu-links">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -33,7 +34,7 @@
 
  <main class="container">
 
-  <!--<section class="slider">
+ <section class="slider">
     <h2 class="visually-hidden">Слайдер</h2>
     <div class="wrapper">
       <div class="container">
@@ -68,7 +69,7 @@
       </div>
     </div>
   </section>
--->
+
 
     <div class="wrapper">
       <section class="services">
@@ -92,33 +93,34 @@
            <p class="service-text">Вы даже не подозреваете, &nbsp;  &nbsp;  &nbsp;  насколько вы изумительны!</p>
            <a class="button button-yellow button-hover" href="#">Заказать</a>
          </li>
+
        </ul>
      </section>
 
      <section class="features">
-      <div>
+      <div class="features-description">
         <b class="features-name">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p class="features-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h2 class="features-title">Выполняем заказы на разработку:</h2>
         <ul class="features-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <li class="features-option"><span class="features-red-line">Веб-сайтов любой сложности</span></li>
+          <li class="features-option"><span class="features-red-line">Мобильных приложений для iOS и Android</span></li>
+          <li class="features-option"><span class="features-red-line">Слайдшоу и видео для корпоративных презентаций</span></li>
         </ul>
       </div>
-      <div>
-        <img src="img/nerds-illustration.png" alt="Nerds" height="208" width="360">
+      <div class="features-accuracy">
+        <img class="feature-image">
         <h2 class="features-title">C 2004 года Любим точность во всем:</h2>
-        <table>
+        <table class="feature-table">
           <tr>
             <td class="features-digits">146%</td>
             <td class="features-digits">100%</td>
             <td class="features-digits">50%</td>
           </tr>
           <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+            <td class="accuracy-desc">Уровень самоотдачи</td>
+            <td class="accuracy-desc">Соблюдение сроков</td>
+            <td class="accuracy-desc">Минимальная предоплата</td>
           </tr>
         </table>
       </div>
@@ -138,7 +140,7 @@
   </div>
 </main>
 
-<!--<section class="map">
+<section class="map">
   <div class="map-wrapper">
     <div class="map-contacts">
       <h3 class="map-title">NЁRDS DESIGN STUDIO</h3>
@@ -147,7 +149,7 @@
     </div>
   </div>
   <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8dbd3145ba81518b280668772244f5726e2923f65aa03a0ab07e19cdf4159e50&amp;source=constructor" height="416"></iframe>
-</section>-->
+</section>
 
 
 <footer class="main-footer">
