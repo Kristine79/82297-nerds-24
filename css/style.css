@@ -145,17 +145,12 @@ a {
   display: flex;
   justify-content: space-around;
   padding:0;
+  padding-bottom: 3px;
 }
-
-/*.menu-links li {
-  padding-right: 27px;
-}
-*/
 
 .main-footer {
   padding-top: 47px;
   padding-bottom: 70px;
-
 }
 
 .services-list {
@@ -285,6 +280,7 @@ padding-top:45px;
  .cart {
   margin-left: auto;
   padding-left: 0;
+  margin-bottom: 19px;
 }
 
  .menu-links {
@@ -370,13 +366,12 @@ padding-top:45px;
 }
 
 .footer-text {
-  padding: 22px 0 0px;
-  margin-left: 135px;
+  margin-left: 127px;
 }
 
 .footer-header {
   display: block;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -385,6 +380,8 @@ padding-top:45px;
 .footer-description {
   margin: 0;
   color: #444;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 
@@ -402,28 +399,27 @@ padding-top:45px;
   margin:0;
 }
 
-.legend-title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30;
-  text-transform: uppercase;
-}
-
 .filter-block {
   padding: 0;
   margin: 0;
   border: none;
 }
+
 .filter-option {
-padding-bottom: 13px;
+  padding-bottom: 13px;
 }
 
 .filter-image {
-padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .range-legend-title {
-margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .radio-filter-block {
@@ -453,15 +449,14 @@ margin-bottom: 20px;
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 60px;
 }
 
 .radio-filter-block {
   margin: 0;
   padding: 0;
   border: none;
-  margin-top: 55px;
 }
-
 
 .range-filter {
   width: 260px;
@@ -476,7 +471,7 @@ margin-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .range-controls .scale {
@@ -612,17 +607,6 @@ margin-bottom: 20px;
   background-position: 0 0;
 }
 
-.checkbox::before {
-  content: "";
-  position: absolute;
-  left:5px;
-  top: 0;
-  width: 26px;
-  height: 26px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .checkboxfilter:checked + .checkbox::before  {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -670,7 +654,7 @@ margin-bottom: 20px;
   padding: 0;
   border: none;
   margin-top: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .filter-checkbox-list {
@@ -695,7 +679,7 @@ margin-bottom: 20px;
 
 .sort {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 
 .sort a {
@@ -1223,7 +1207,7 @@ margin-bottom: 20px;
   width: 270px;
   min-height: 270px;
   padding: 37px 0 0 50px;
-  margin: 53px 0 0 20px;
+  margin: 53px 0 0 0px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1249,3 +1233,6 @@ margin-bottom: 20px;
   border: none;
 }
 
+.map-contacts h3 {
+ margin: 15px 0 27px;
+}
