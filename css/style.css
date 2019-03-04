@@ -58,11 +58,11 @@ a {
   margin-right: 200px;
 }
 
-.logo [href]:hover {
+.logo a[href]:hover {
   opacity: .8;
 }
 
-.logo [href]:active {
+.logo a[href]:active {
   opacity: .3;
 }
 
@@ -170,6 +170,7 @@ a {
 
 .service-image {
   display: block;
+  vertical-align: middle;
 }
 
 .features-name {
@@ -1082,10 +1083,10 @@ padding-top:45px;
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 112px;
+  bottom: 102px;
   z-index: 100;
   width: 160px;
-  height: 18px;
+  height: 28px;
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -1288,7 +1289,7 @@ padding-top:45px;
 
 /*Пейджер*/
 
-.pagination-list {
+.pager {
   display: flex;
   margin: 40px 0 73px;
   padding: 0;
@@ -1316,10 +1317,15 @@ padding-top:45px;
   vertical-align: top;
 }
 
-.pagination-item-next a {
+.button-pagination {
+  display: inline-block;
+  color: black;
+  background-color: #eee;
   padding: 15px 80px;
   text-transform: uppercase;
 }
+
+
 
 
 
