@@ -194,12 +194,13 @@ a {
 .features-digits  {
   font-size: 45px;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 10px;
   color: #000000;
 }
 .accuracy-desc {
-font-size: 16px;
-line-height: 18px;
+ font-size: 16px;
+ line-height: 18px;
+ padding-top: 20px;
 }
 
 .button {
@@ -313,38 +314,60 @@ padding-top:45px;
 
 .partners {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 42px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  margin: 0 20px 82px;
+  margin-bottom: 82px;
   padding-left: 0;
+}
+
+.partners a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 90px;
+}
+
+.partners img {
+  display: block;
 }
 
 .partners li {
   position: relative;
-  margin-bottom: 20px;
 }
 
-.partners li:first-child {
-  margin-top: 43px;
-  margin-left: 11px;
+.partners li::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  right: -20px;
+  top: 50%;
+  margin-top: -26px;
+  background-color: #eeeeee;
 }
 
-.partners li:nth-child(2) {
-  margin-left: 96px;
-  margin-top: 27px;
+.partners li:last-child::before {
+  background-color: transparent;
 }
 
-.partners li:nth-child(3) {
-  margin-left: 103px;
-  margin-top: 46px;
+.partners a {
+  opacity: 0.2;
 }
 
-.partners li:last-child {
-  margin-left: 121px;
-  margin-top: 33px;
+.partners a:hover {
+  opacity: 1;
 }
+
+.partners a:active {
+  opacity: 0.1;
+}
+
 
 /*Футер*/
 
@@ -590,6 +613,10 @@ padding-top:45px;
   border-color: #4d4d4d;
 }
 
+.radio_button:focus {
+  border-color: #4d4d4d;
+}
+
 .radiofilter:checked + .radio_button:hover:before{
   background-color: #4d4d4d;
   border-color: #4d4d4d;
@@ -603,12 +630,6 @@ padding-top:45px;
   opacity: 0.1;
 }
 
-.radio_button:focus {
-  outline: none;
-  box-shadow:
-    0 0 0 3px #fff,
-    0 0 0 6px #2f7cc0;
-}
 
 
 /*Второй фильтр. Особенности*/
@@ -640,6 +661,10 @@ padding-top:45px;
 }
 
 .checkbox:hover {
+  opacity: 0.4;
+}
+
+.checkbox:focus {
   opacity: 0.4;
 }
 
@@ -823,16 +848,16 @@ padding-top:45px;
   padding-bottom: 18px;
 }
 
-/*Блок сверху над товаром + наведение на него*/
+/*Наведение на плитку*/
 
-.above-item-block  {
+.catalog-item  {
   position: relative;
   height: 616px;
   background-color: #eee;
   border-radius: 4px 4px 0 0;
 }
 
-.above-item-block::before {
+.catalog-item::before {
   display: inline-block;
   vertical-align: top;
   content: "";
@@ -843,11 +868,11 @@ padding-top:45px;
   padding: 0;
 }
 
-.above-item-block:hover:before {
+.catalog-item:hover:before {
   opacity: 1;
 }
 
-.above-item-block::after {
+.catalog-item::after {
   content: "";
   position: absolute;
   top: 13px;
@@ -865,7 +890,7 @@ padding-top:45px;
   left: 0;
 }
 
-/*Блок при наведении на плитку*/
+/*Блок описания при наведении на плитку*/
 
 .template {
   position: relative;
@@ -881,7 +906,7 @@ padding-top:45px;
   padding-bottom: 43px;
 }
 
-.template:hover .template-info {
+.catalog-item:hover .template-info  {
   display:block;
 }
 
@@ -912,8 +937,8 @@ padding-top:45px;
   height: 590px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   margin:0 auto;
-  bottom: 180px;
-  right: 275px;
+  bottom: 50%;
+  margin-right: -480px;
   background-color: white;
 }
 
@@ -1179,6 +1204,7 @@ padding-top:45px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: black;
 }
 
 .slider-item p {
@@ -1273,14 +1299,18 @@ padding-top:45px;
   font-size: 16px;
   color: black;
   margin-left: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 }
+
 
 .features-digits {
   padding-top: 5px;
   padding-bottom: 15px;
-  font-weight: 700;
-  font-size: 45px;
+  padding-right: 18px;
+}
+
+.features-digits sup {
+  font-size: 27px;
 }
 
 .feature-table-desc {
