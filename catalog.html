@@ -129,7 +129,7 @@
               </ul>
 
             </fieldset>
-            <button class="button button-filter">Показать</button>
+            <button class="button button-filter" type="submit" aria-label="Показать">Показать</button>
           </form>
         </section>
 
@@ -233,34 +233,26 @@
       <ol class="pagination-list">
         <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
         <li class="pagination-item"><a>2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item pagination-item-last"><a href="#">3</a></li>
       </ol>
       <a class="button-pagination" href="#">Следующая</a>
     </div>
 
     </section>
-
+   </div>
   </div>
 </main>
-
-
-
-
 
   <section class="map">
   <div class="map-wrapper">
     <div class="map-contacts">
       <h3 class="map-title">NЁRDS DESIGN STUDIO</h3>
       <address class="map-address"><p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p><p> тел. +7 (812) 275-75-75</p></address>
-      <a class="button button-red modal-write-us map-button" href="writeus.html">Напишите нам</a>
+      <a class="button button-red modal-write-us map-button" aria-label="Напишите нам" href="writeus.html">Напишите нам</a>
     </div>
   </div>
   <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8dbd3145ba81518b280668772244f5726e2923f65aa03a0ab07e19cdf4159e50&amp;source=constructor" height="416"></iframe>
 </section>
-
-
-
-
 
 <footer class="main-footer">
   <div class="footer-container">
@@ -278,25 +270,25 @@
 
 <section class="contact contact-form">
   <h2 class="contact-title">Напишите нам</h2>
-  <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+  <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <div class="contact-wraper">
       <p class="contact-item" >
         <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия" >
+        <input class="contact-input name" id="name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="contact-item">
         <label for="email">Ваш email:</label>
-        <input id="email" type="text" name="email" placeholder="email@example.com">
+        <input class="contact-input email" id="email" type="text" name="email" placeholder="email@example.com">
       </p>
       <p class="contact-item">
-        <textarea rows="6" cols="85" name="text">Текст письма</textarea>
+        <label for="letter-text">Текст письма:</label>
+        <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме"></textarea>
      </p>
-
-      <button class="button button-red button-contact ">Отправить</button>
-      <button class="contact-close" type="submit">Войти</button>
+      <button class="button button-red button-contact" aria-label="Отправить">Отправить</button>
+      <button class="contact-close" type="submit" aria-label="Закрыть">Закрыть</button>
     </div>
   </form>
 </section>
-
+<script src="js/main.js"></script>
 </body>
 </html>
