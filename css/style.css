@@ -138,7 +138,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  color: black;
+  color: #000;
   margin-bottom: 18px;
 }
 
@@ -175,6 +175,7 @@ a {
 
 .features-name {
   display: inline-block;
+  vertical-align: middle;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -257,7 +258,7 @@ a {
 
 .footer-social  {
   list-style: none;
-  margin:0;
+  margin: 0;
 }
 
 .social-button {
@@ -280,7 +281,7 @@ a {
 
 .main-header {
   background-color: #eeeeee;
-  padding-top:45px;
+  padding-top: 45px;
 }
 
 .main-nav {
@@ -399,7 +400,7 @@ a {
   width: 79px;
   height: 79px;
   border-radius: 79px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 .footer-text {
@@ -409,7 +410,7 @@ a {
 .footer-header {
   display: block;
   margin: 0 0 10px;
-  color: black;
+  color: #000;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -435,7 +436,7 @@ a {
   background-color: #eeeeee;
   padding-top: 68px;
   padding-bottom: 109px;
-  margin:0;
+  margin: 0;
 }
 
 .filter-block {
@@ -578,7 +579,7 @@ a {
 /*Первый фильтр*/
 
 .radio_button {
-  position:relative;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 16px;
@@ -642,7 +643,7 @@ a {
 .checkbox::before {
   content: "";
   position: absolute;
-  left:0px;
+  left: 0px;
   top: 0;
   width: 26px;
   height: 26px;
@@ -679,7 +680,7 @@ a {
 
 .button-filter {
   background-color:#eeeeee;
-  color: black;
+  color: #000;
   text-transform: uppercase;
   padding-left: 89px;
   padding-right: 88px;
@@ -755,7 +756,7 @@ a {
 .sort-items a {
   font-size: 14px;
   line-height: 18px;
-  color: black;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -812,8 +813,8 @@ a {
   width: 760px;
   margin: 0 50px 28px;
   list-style: none;
-  padding-left:0;
-  margin:0;
+  padding-left: 0;
+  margin: 0;
 }
 
 .catalog-columns {
@@ -827,11 +828,11 @@ a {
 
 .catalog {
   width: 760px;
-  margin:0;
+  margin: 0;
 }
 
 .catalog-item {
-  width:360px;
+  width: 360px;
   margin: 0 0 32px;
 }
 
@@ -840,7 +841,7 @@ a {
 }
 
 .catalog-item-title {
-  color:black;
+  color: #000;
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
@@ -897,10 +898,10 @@ a {
 
 .template-info {
   display: none;
-  position:absolute;
+  position: absolute;
   width: 360px;
   bottom: 0;
-  background-color:#eeeeee;
+  background-color: #eeeeee;
   text-align: center;
   padding-bottom: 43px;
 }
@@ -910,7 +911,7 @@ a {
 }
 
 .description {
-  display:block;
+  display: block;
   line-height: 19px;
   width: 230px;
   color: #8a8a8a;
@@ -919,8 +920,8 @@ a {
 }
 
 .button-cart {
-  padding-left:63px;
-  padding-right:60px;
+  padding-left: 63px;
+  padding-right: 60px;
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 3px;
@@ -973,8 +974,8 @@ a {
 }
 
 .contact-item input:focus {
-  border-color: black;
-  color: black;
+  border-color: #000;
+  color: #000;
 }
 
 .contact-item input:hover {
@@ -992,7 +993,7 @@ a {
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
-  color: black;
+  color: #000;
   padding-top: 30px;
   margin-left: 98px;
   margin-bottom: 22px;
@@ -1220,7 +1221,7 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  color: black;
+  color: #000;
 }
 
 .slider-item p {
@@ -1250,7 +1251,7 @@ a {
 
 .slider-item-button:active {
   background-color: #d7373b;
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1269,6 +1270,7 @@ a {
 
 .features-text {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding-bottom: 25px;
 }
@@ -1313,7 +1315,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
-  color: black;
+  color: #000;
   margin-left: 18px;
   margin-bottom: 52px;
 }
@@ -1350,7 +1352,7 @@ a {
   cursor: pointer;
   background-color: #eee;
   border-radius: 5px;
-  color: black;
+  color: #000;
   font-weight: 500;
   margin-right: 7px;
 }
@@ -1372,8 +1374,8 @@ a {
 }
 
 .button-pagination {
-  background-color:#eeeeee;
-  color: black;
+  background-color: #eeeeee;
+  color: #000;
   text-transform: uppercase;
   padding-left: 79px;
   padding-right: 78px;
@@ -1400,7 +1402,7 @@ a {
 }
 
 .map-wrapper {
-  width:1160px;
+  width: 1160px;
   position: absolute;
   left: 0;
   right: 0;
