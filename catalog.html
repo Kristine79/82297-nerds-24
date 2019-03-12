@@ -37,7 +37,7 @@
       <div class="catalog-columns">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="product-filter" action="#" method="get">
+          <form class="product-filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-block">
               <legend class="range-legend-title">Стоимость</legend>
                 <div class="range-filter">
@@ -67,7 +67,7 @@
                   </li>
 
                   <li class="filter-option">
-                    <label>
+                    <label class="filter-text">
                       <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="fixed">
                       <span class="radio_button"></span>
                       <span class="filter-name">Фиксированная</span>
@@ -75,7 +75,7 @@
                   </li>
 
                   <li class="filter-option">
-                    <label>
+                    <label class="filter-text">
                       <input class="radiofilter  visually-hidden"  name="checkbox-grid" type="radio"  value="resin">
                       <span class="radio_button"></span>
                       <span class="filter-name">Резиновая</span>
@@ -254,6 +254,7 @@
   <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8dbd3145ba81518b280668772244f5726e2923f65aa03a0ab07e19cdf4159e50&amp;source=constructor" height="416"></iframe>
 </section>
 
+
 <footer class="main-footer">
   <div class="footer-container">
     <ul class="footer-social">
@@ -268,13 +269,15 @@
   </div>
 </footer>
 
+
+
 <section class="contact contact-form">
   <h2 class="contact-title">Напишите нам</h2>
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <div class="contact-wraper">
       <p class="contact-item" >
         <label for="name">Ваше имя:</label>
-        <input class="contact-input name" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="contact-input names" id="name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="contact-item">
         <label for="email">Ваш email:</label>
