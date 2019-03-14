@@ -269,14 +269,13 @@ a {
   background-color: #e74246
 }
 
-.social-button:active .social-image {
-  opacity: 0.3;
-}
-
 .social-button:active {
-  opacity: 0.3;
+  background-color: #d7373b
 }
 
+.social-image:active {
+  opacity: 0.3;
+}
 
 /*Сетка*/
 
@@ -306,7 +305,7 @@ a {
   padding-right: 100px;
 }
 
-.services-item:nth-child(3) {
+.services-item:nth-child(3n) {
   padding: 0;
 }
 
@@ -610,6 +609,14 @@ a {
   bottom: 3px;
 }
 
+.radiofilter:focus + .radio_button {
+  border-color: #4c4c4c;
+}
+
+.radiofilter:focus + .radio_button:before {
+  background-color: #4c4c4c;
+  border-color: #4c4c4c;
+}
 
 .filter-option:hover .radio_button {
   border-color: #4c4c4c;
@@ -620,9 +627,6 @@ a {
   border-color: #4c4c4c;
 }
 
-.radio_button:focus {
-  border-color: #4c4c4c;
-}
 
 .radiofilter:checked + .radio_button:hover:before{
   background-color: #4c4c4c;
@@ -675,7 +679,7 @@ a {
  opacity: 1;
 }
 
-.checkbox:focus {
+.checkboxfilter:focus + .checkbox:before {
   opacity: 1;
 }
 
@@ -1048,10 +1052,9 @@ a {
 }
 
 
-.email::placeholder,
-.name::placeholder,
-.letter-text::placeholder {
-  display: none;
+.error.email::placeholder,
+.error.name::placeholder,
+.error.letter-text::placeholder {
   color: #e74246;
 }
 
