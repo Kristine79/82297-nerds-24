@@ -373,7 +373,9 @@ a {
 .footer-container {
   width: 1200px;
   margin: 0 auto;
-  padding-right: 34px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .footer-container {
@@ -383,6 +385,7 @@ a {
 
 .footer-social {
   display: flex;
+  padding-left: 0;
 }
 
 .footer-social ul {
@@ -400,11 +403,11 @@ a {
   width: 79px;
   height: 79px;
   border-radius: 79px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .footer-text {
-  margin-left: 131px;
+  margin-left: 129px;
 }
 
 .footer-header {

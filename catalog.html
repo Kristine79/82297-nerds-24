@@ -40,98 +40,97 @@
           <form class="product-filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-block">
               <legend class="range-legend-title">Стоимость</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                      <div class="toggle toggle-min"></div>
-                      <div class="toggle toggle-max"></div>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </fieldset>
 
             <fieldset class="radio-filter-block">
-              <legend class="radio-legend-title">Сетка:</legend>
-                <ul>
-                  <li class="filter-option">
-                    <label class="filter-text">
-                      <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="Adaptive" checked>
-                      <span class="radio_button"></span>
-                      <span class="filter-name">Адаптивная</span>
-                    </label>
-                  </li>
+            <legend class="radio-legend-title">Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label class="filter-text">
+                    <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="Adaptive" checked>
+                    <span class="radio_button"></span>
+                    <span class="filter-name">Адаптивная</span>
+                  </label>
+                </li>
 
-                  <li class="filter-option">
-                    <label class="filter-text">
-                      <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="fixed">
-                      <span class="radio_button"></span>
-                      <span class="filter-name">Фиксированная</span>
-                    </label>
-                  </li>
+                <li class="filter-option">
+                  <label class="filter-text">
+                    <input class="radiofilter  visually-hidden" name="checkbox-grid" type="radio"  value="fixed">
+                    <span class="radio_button"></span>
+                    <span class="filter-name">Фиксированная</span>
+                  </label>
+                </li>
 
-                  <li class="filter-option">
-                    <label class="filter-text">
-                      <input class="radiofilter  visually-hidden"  name="checkbox-grid" type="radio"  value="resin">
-                      <span class="radio_button"></span>
-                      <span class="filter-name">Резиновая</span>
-                    </label>
+                <li class="filter-option">
+                  <label class="filter-text">
+                    <input class="radiofilter  visually-hidden"  name="checkbox-grid" type="radio"  value="resin">
+                    <span class="radio_button"></span>
+                    <span class="filter-name">Резиновая</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="checkbox-filter-block">
               <legend class="checkbox-legend-title">Особенности:</legend>
-                <ul class="filter-checkbox-list">
-                  <li class="filter-image">
-                    <label class="filter-item">
-                      <input class="checkboxfilter visually-hidden"  id="slider" name="Slider" type="checkbox" value="Slider" checked>
-                      <span class="checkbox"></span>
-                      <span class="filter-name">Слайдер</span>
-                    </label>
-                  </li>
-
-                  <li class="filter-image">
-                    <label class="filter-item">
-                      <input class="checkboxfilter visually-hidden" id="advantages" name="advantages" type="checkbox" value="advantages">
-                      <span class="checkbox"></span>
-                      <span class="filter-name">Блок преимуществ</span>
-                   </label>
-                 </li>
-
-                 <li class="filter-image ">
+              <ul class="filter-checkbox-list">
+                <li class="filter-image">
                   <label class="filter-item">
-                    <input class="checkboxfilter visually-hidden" id="news" name="Resin" type="checkbox" value="news" checked>
+                    <input class="checkboxfilter visually-hidden" id="slider" name="Slider" type="checkbox" value="Slider" checked>
                     <span class="checkbox"></span>
-                    <span class="filter-name">Новости</span>
+                    <span class="filter-name">Слайдер</span>
                   </label>
                 </li>
 
                 <li class="filter-image">
                   <label class="filter-item">
-                    <input class="checkboxfilter visually-hidden"  id="gallery" name="gallery" type="checkbox" value="gallery">
+                    <input class="checkboxfilter visually-hidden" id="advantages" name="advantages" type="checkbox" value="advantages">
                     <span class="checkbox"></span>
-                    <span class="filter-name">Галерея</span>
+                    <span class="filter-name">Блок преимуществ</span>
                   </label>
                 </li>
 
+                <li class="filter-image ">
+                <label class="filter-item">
+                  <input class="checkboxfilter visually-hidden" id="news" name="Resin" type="checkbox" value="news" checked>
+                  <span class="checkbox"></span>
+                  <span class="filter-name">Новости</span>
+                </label>
+                </li>
+
                 <li class="filter-image">
-                  <label class="filter-item">
-                    <input class="checkboxfilter visually-hidden"  id="cart" name="cart" type="checkbox" value="cart">
-                    <span class="checkbox"></span>
-                    <span class="filter-name">Корзина</span>
-                  </label>
+                <label class="filter-item">
+                  <input class="checkboxfilter visually-hidden" id="gallery" name="gallery" type="checkbox" value="gallery">
+                  <span class="checkbox"></span>
+                  <span class="filter-name">Галерея</span>
+                </label>
+                </li>
+
+                <li class="filter-image">
+                <label class="filter-item">
+                  <input class="checkboxfilter visually-hidden" id="cart" name="cart" type="checkbox" value="cart">
+                  <span class="checkbox"></span>
+                  <span class="filter-name">Корзина</span>
+                </label>
                 </li>
               </ul>
             </fieldset>
             <button class="button button-filter" type="submit" aria-label="Показать">Показать</button>
           </form>
         </section>
-
 
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
@@ -228,15 +227,14 @@
             </li>
           </ul>
 
-        <div class="pager">
-          <ol class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-            <li class="pagination-item"><a>2</a></li>
-            <li class="pagination-item pagination-item-last"><a href="#">3</a></li>
-          </ol>
-          <a class="button-pagination" href="#">Следующая</a>
-        </div>
-
+          <div class="pager">
+            <ol class="pagination-list">
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item pagination-item-last"><a href="#">3</a></li>
+            </ol>
+            <a class="button-pagination" href="#">Следующая</a>
+          </div>
         </section>
       </div>
     </div>
@@ -246,10 +244,10 @@
         <div class="map-contacts">
           <h3 class="map-title">NЁRDS DESIGN STUDIO</h3>
           <address class="map-address">
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p> тел. +7 (812) 275-75-75</p>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p> тел. +7 (812) 275-75-75</p>
           </address>
-          <a class="button button-red modal-write-us map-button" aria-label="Напишите нам" href="writeus.html">Напишите нам</a>
+          <a class="button button-red modal-write-us map-button" href="writeus.html">Напишите нам</a>
         </div>
       </div>
       <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8dbd3145ba81518b280668772244f5726e2923f65aa03a0ab07e19cdf4159e50&amp;source=constructor" height="416"></iframe>
@@ -296,8 +294,9 @@
       </p>
       <p class="contact-item">
         <label for="letter-text">Текст письма:</label>
-        <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме"></textarea>
-     </p>
+        <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме">
+        </extarea>
+      </p>
       <button class="button button-red button-contact">Отправить</button>
       <button class="contact-close" type="submit">Закрыть</button>
     </div>
