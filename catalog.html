@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -281,27 +281,26 @@
   </footer>
 
   <section class="contact contact-form">
-  <h2 class="contact-title">Напишите нам</h2>
-  <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="contact-wraper">
-      <p class="contact-item" >
-        <label for="name">Ваше имя:</label>
-        <input class="contact-input names" id="name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p class="contact-item">
-        <label for="email">Ваш email:</label>
-        <input class="contact-input email" id="email" type="text" name="email" placeholder="email@example.com">
-      </p>
-      <p class="contact-item">
-        <label for="letter-text">Текст письма:</label>
-        <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме">
-        </extarea>
-      </p>
-      <button class="button button-red button-contact">Отправить</button>
-      <button class="contact-close" type="submit">Закрыть</button>
-    </div>
-  </form>
+    <h2 class="contact-title">Напишите нам</h2>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contact-wraper">
+        <p class="contact-item" >
+          <label for="name">Ваше имя:</label>
+          <input class="contact-input name" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-item">
+          <label for="email">Ваш e-mail:</label>
+          <input class="contact-input email" id="email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="contact-item">
+          <label for="letter-text">Текст письма:</label>
+          <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button button-red button-contact">Отправить</button>
+        <button class="contact-close" type="submit">Закрыть</button>
+      </div>
+    </form>
   </section>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
