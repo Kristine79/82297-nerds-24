@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -22,9 +22,9 @@
           <li><a class="active_page" href="nerds-catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="cart">
+        <ul class="cart active_page">
           <li>
-            <a class="cart-link" href="cart.html">Корзина</a>
+            <a class="cart-link" class="active_page" href="cart.html">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -89,7 +89,7 @@
               <ul class="filter-checkbox-list">
                 <li class="filter-image">
                   <label class="filter-item">
-                    <input class="checkboxfilter visually-hidden" id="slider" name="Slider" type="checkbox" value="Slider" checked>
+                    <input class="checkboxfilter visually-hidden" id="slider" name="Slider" type="checkbox" checked>
                     <span class="checkbox"></span>
                     <span class="filter-name">Слайдер</span>
                   </label>
@@ -97,7 +97,7 @@
 
                 <li class="filter-image">
                   <label class="filter-item">
-                    <input class="checkboxfilter visually-hidden" id="advantages" name="advantages" type="checkbox" value="advantages">
+                    <input class="checkboxfilter visually-hidden" id="advantages" name="advantages" type="checkbox">
                     <span class="checkbox"></span>
                     <span class="filter-name">Блок преимуществ</span>
                   </label>
@@ -105,7 +105,7 @@
 
                 <li class="filter-image ">
                 <label class="filter-item">
-                  <input class="checkboxfilter visually-hidden" id="news" name="Resin" type="checkbox" value="news" checked>
+                  <input class="checkboxfilter visually-hidden" id="news" name="Resin" type="checkbox" checked>
                   <span class="checkbox"></span>
                   <span class="filter-name">Новости</span>
                 </label>
@@ -113,7 +113,7 @@
 
                 <li class="filter-image">
                 <label class="filter-item">
-                  <input class="checkboxfilter visually-hidden" id="gallery" name="gallery" type="checkbox" value="gallery">
+                  <input class="checkboxfilter visually-hidden" id="gallery" name="gallery" type="checkbox">
                   <span class="checkbox"></span>
                   <span class="filter-name">Галерея</span>
                 </label>
@@ -128,7 +128,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-filter" type="submit" aria-label="Показать">Показать</button>
+            <button class="button button-filter" type="submit">Показать</button>
           </form>
         </section>
 
@@ -142,8 +142,8 @@
               <li><a href="#">По названию</a></li>
             </ul>
             <div class="sort-icons">
-              <a class="sort-down sort-down-active" href="#"></a>
-              <a class="sort-up" href="#"></a>
+              <a class="sort-down sort-down-active" href="#">Вверх</a>
+              <a class="sort-up" href="#">Вниз</a>
             </div>
           </div>
 
@@ -155,7 +155,7 @@
                   <a class="catalog-item-link" href="#">
                     <h3 class="catalog-item-title">Sedona</h3>
                   </a>
-                  <p class="description"><span class="desc-text">Информационный сайт для туристов</span></p>
+                  <p class="description"><span class="desc-text">Информационный сайт&nbsp;для туристов</span></p>
                   <a class="button button-red button-cart" href="#">9 900 Руб.</a>
                 </div>
               </div>
@@ -181,7 +181,7 @@
                   <a class="catalog-item-link" href="#">
                     <h3 class="catalog-item-title">Barbershop</h3>
                   </a>
-                  <p class="description">Сайт салона красоты. Для мужчин, да.</p>
+                  <p class="description">Сайт салона красоты.&nbsp;&nbsp;&nbsp;&nbsp;Для мужчин, да.</p>
                   <a class="button button-red button-cart" href="#">9 900 Руб.</a>
                 </div>
               </div>
@@ -301,6 +301,6 @@
       </div>
     </form>
   </section>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

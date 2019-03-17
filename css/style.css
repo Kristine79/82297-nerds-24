@@ -40,7 +40,7 @@ a {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   }
 
@@ -54,15 +54,15 @@ a {
   list-style: none;
 }
 
-.logo {
-  margin-right: 200px;
+.logo-image {
+  margin-right: 203px;
 }
 
-.logo a[href]:hover {
+.logo-image:hover {
   opacity: .8;
 }
 
-.logo a[href]:active {
+.logo-image:active {
   opacity: .3;
 }
 
@@ -88,7 +88,7 @@ a {
   height: 18px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0px 0;
 }
 
 .main-nav a:hover,
@@ -117,6 +117,7 @@ a {
   width: 74px;
   height: 18px;
   border-bottom: 2px solid #e74246;
+
 }
 
 .services {
@@ -130,7 +131,8 @@ a {
   padding-left: 0;
 }
 
-.services-item {
+.service-text {
+ width: 250px;
  text-align: left;
 }
 
@@ -156,7 +158,7 @@ a {
 }
 
 .menu-links li {
-  padding-right: 47px;
+  padding-right: 46px;
   margin-bottom: 0;
 }
 
@@ -176,7 +178,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   font-size: 45px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 45px;
   color: #000000;
   margin-bottom: 33px;
@@ -274,7 +276,7 @@ a {
 }
 
 .social-image:active {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 /*Сетка*/
@@ -341,7 +343,7 @@ a {
 }
 
 .partners li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 52px;
@@ -356,7 +358,7 @@ a {
 }
 
 .partners a {
-  opacity: 0.2;
+  opacity: .2;
 }
 
 .partners a:hover {
@@ -364,7 +366,7 @@ a {
 }
 
 .partners a:active {
-  opacity: 0.1;
+  opacity: .1;
 }
 
 
@@ -413,15 +415,15 @@ a {
 .footer-header {
   display: block;
   margin: 0 0 12px;
-  color: #000;
-  font-weight: 700;
+  color: #00000;
+  font-weight: bold;
   font-size: 36px;
   line-height: 36px;
 }
 
 .footer-description {
   margin: 0;
-  color: #444;
+  color: #444444;
   font-size: 16px;
   line-height: 22px;
   padding-bottom: 7px;
@@ -432,7 +434,7 @@ a {
 
 .page-title {
   font-size: 55px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 55px;
   color: #000000;
   text-align: center;
@@ -470,7 +472,7 @@ a {
 }
 
 .radio-legend-title {
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 .product-filter legend {
@@ -510,7 +512,7 @@ a {
   position: relative;
   height: 41px;
   margin-bottom: 15px;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -602,7 +604,7 @@ a {
 
 .radiofilter:checked + .radio_button::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 4px;
   height: 4px;
   border: 3px solid #b8b8b8;
@@ -637,15 +639,15 @@ a {
 }
 
 .radio_button:disabled {
-  opacity: 0.1;
+  opacity: .1;
 }
 
 .filter-name:disabled {
-  opacity: 0.1;
+  opacity: .1;
 }
 
 .radiofilter:disabled + .radio_button:hover:before{
-  opacity: 0.1;
+  opacity: .1;
 }
 
 /*Второй фильтр. Особенности*/
@@ -661,14 +663,14 @@ a {
 .checkbox::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 0;
   width: 26px;
   height: 26px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.4;
+  opacity: .4;
 }
 
 .checkboxfilter:checked + .checkbox::before  {
@@ -691,16 +693,16 @@ a {
 }
 
 .checkbox:disabled {
-  opacity: 0.1;
+  opacity: .1;
 }
 
 .checkboxfilter:disabled + .checkbox:hover:before{
-  opacity: 0.1;
+  opacity: .1;
 }
 
 .button-filter {
   background-color: #eeeeee;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   padding-left: 89px;
   padding-right: 88px;
@@ -716,6 +718,7 @@ a {
 
 .button-filter:active {
   background-color: #d5d5d5;
+  padding-top: 13px;
   border-top: 3px solid #bfbfbf;
   color: #959595;
 }
@@ -724,7 +727,7 @@ a {
   margin: 0;
   padding: 0;
   border: none;
-  margin-top: 34px;
+  margin-top: 32px;
   margin-bottom: 30px;
 }
 
@@ -736,7 +739,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 14px;
 }
 
@@ -750,15 +753,14 @@ a {
 
 .sort {
   display: flex;
-  padding-bottom: 53px;
-  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-top: 56px;
 }
 
 .sort a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
-  font-size: 14px;
+  color: #000000;
   opacity: .3;
 }
 
@@ -774,10 +776,16 @@ a {
   padding-right: 27px;
 }
 
+.sort-down,
+.sort-up {
+    font-size: 0;
+}
+
+
 .sort-items a {
   font-size: 14px;
   line-height: 18px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -843,8 +851,8 @@ a {
 }
 
 .filters {
-  padding-right: 140px;
-  padding-top: 59px;
+  padding-right: 141px;
+  padding-top: 60px;
 }
 
 .catalog {
@@ -862,7 +870,7 @@ a {
 }
 
 .catalog-item-title {
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
@@ -874,7 +882,7 @@ a {
 .catalog-item  {
   position: relative;
   height: 616px;
-  background-color: #eee;
+  background-color: #eeeeee;
   border-radius: 4px 4px 0 0;
 }
 
@@ -891,6 +899,7 @@ a {
 
 .catalog-item:hover:before {
   opacity: 1;
+  box-shadow: 0px 0px 7px 7px rgba(0, 1, 1, 0.75);
 }
 
 .catalog-item::after {
@@ -900,15 +909,19 @@ a {
   left: 16px;
   width: 14px;
   height: 14px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
-  box-shadow: 23px 0 0 #fff, 46px 0 0 #fff;
+  box-shadow: 23px 0 0 #ffffff, 46px 0 0 #ffffff;
 }
 
 .product-image {
   display: block;
   top: 40px;
   left: 0;
+}
+
+.product-image:hover {
+  box-shadow: 0px 14px 7px 7px rgba(0, 1, 1, 0.75);
 }
 
 /*Блок описания при наведении на плитку*/
@@ -934,7 +947,7 @@ a {
 .description {
   display: block;
   line-height: 19px;
-  width: 230px;
+
   color: #8a8a8a;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -949,7 +962,7 @@ a {
 }
 
 .button-cart:active {
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -965,7 +978,7 @@ a {
   bottom: 90px;
   right: 50%;
   margin-right: -480px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .contact-wraper {
@@ -992,8 +1005,8 @@ a {
 }
 
 .contact-input:focus {
-  border-color: #000;
-  color: #000;
+  border-color: #000000;
+  color: #000000;
   outline: none;
 }
 
@@ -1012,7 +1025,7 @@ a {
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
-  color: #000;
+  color: #000000;
   padding-top: 30px;
   margin-left: 98px;
   margin-bottom: 22px;
@@ -1261,8 +1274,8 @@ a {
   margin-bottom: 28px;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
-  color: #000;
+  font-weight: bold;
+  color: #000000;
 }
 
 .slider-item p {
@@ -1342,7 +1355,7 @@ a {
 }
 
 .features-accuracy {
-  background: url('../img/nerds-illustration.png') no-repeat 0 0;
+  background: url("../img/nerds-illustration.png") no-repeat 0 0;
   width: 360px;
   margin-top: 41px;
 }
@@ -1353,10 +1366,10 @@ a {
 
 .feature-table caption {
   text-align: left;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 16px;
-  color: #000;
+  color: #000000;
   margin-left: 18px;
   margin-bottom: 52px;
 }
@@ -1391,16 +1404,16 @@ a {
 .pagination-item a {
   padding: 15px 21px;
   cursor: pointer;
-  background-color: #eee;
+  background-color: #eeeeee;
   border-radius: 5px;
-  color: #000;
-  font-weight: 500;
+  color: #000000;
+  font-weight: bold;
   margin-right: 7px;
 }
 
 .pagination-item-current a {
-  background-color: #fff;
-  border: 4px solid #eee;
+  background-color: #ffffff;
+  border: 4px solid #eeeeee;
   padding: 11px 16px;
   border-radius: 5px;
 }
@@ -1416,7 +1429,7 @@ a {
 
 .button-pagination {
   background-color: #eeeeee;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   padding-left: 79px;
   padding-right: 78px;
@@ -1434,11 +1447,14 @@ a {
 .pagination-item:not(:first-child) a:active {
  background-color: #d5d5d5;
  color: #959595;
+ padding-top: 10px;
+ border-top: 3px solid #bfbfbf;
 }
 
 /*Карта*/
 
 .map {
+  position: relative;
   background-color: #eee;
   background-size: cover;
   max-height: 416px;
@@ -1462,7 +1478,7 @@ a {
 
 .map-contacts {
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 270px;
   padding: 0px 25px 0px 25px;
   margin-top: 52px;
@@ -1472,12 +1488,12 @@ a {
 }
 
 .map-contacts p {
-  color: #666;
+  color: #666666;
   font-style: normal;
   line-height: 18px;
   max-width: 210px;
-  padding-right: 0px;
-  padding-top: 4px;
+  padding-right: 0;
+  padding-top: 5px;
   padding-left: 27px;
 }
 
@@ -1500,3 +1516,14 @@ a {
 .map-contacts h3 {
  padding-left: 25px;
 }
+
+.map {
+  position: relative;
+}
+
+.map-hidden {
+  display: none;
+  position: absolute;
+  right: 40px;
+}
+

@@ -5,34 +5,33 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="main-header">
     <div class="wrapper">
       <nav class="main-nav">
-        <div class="logo">
-          <a>
-            <img class="logo-image" src="img/nerds-logo.svg" height="65" width="160" alt="Лого">
-          </a>
-        </div>
-        <ul class="menu-links">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="cart">
-          <li>
-            <a class="cart-link" href="cart.html">Корзина</a>
-          </li>
-        </ul>
+        <a>
+          <img class="logo-image" src="img/nerds-logo.svg" height="65" width="160" alt="Лого">
+        </a>
+      <ul class="menu-links">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="cart">
+        <li>
+          <a class="cart-link" href="cart.html">Корзина</a>
+        </li>
+      </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
+  <h1 class="visually-hidden">О студии Нёрдс</h1>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
       <div class="wrapper">
@@ -48,18 +47,18 @@
           </div>
           <ul class="slider-list">
             <li class="slider-item">
-              <h3 class="slider-title">Долго, дорого, скрупулезно.</h3>
-              <p class="slider-text">Математически выверенный дизайн  для&nbsp;вашего&nbsp;cайта или мобильного приложения</p>
+              <h3 class="slider-title">Долго, дорого, <br> скрупулезно.</h3>
+              <p class="slider-text">Математически выверенный дизайн <br> для вашего cайта или мобильного приложения</p>
               <a class="slider-item-button button button-red" href="#">Узнать больше</a>
             </li>
             <li class="slider-item">
               <h3 class="slider-title">Любим математику как никто другой</h3>
-              <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+              <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
               <a class="slider-item-button button button-red" href="#">Узнать больше</a>
             </li>
             <li class="slider-item">
-              <h3 class="slider-title">Только ночь, только хардкор</h3>
-              <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <h3 class="slider-title">Только ночь, <br> только хардкор</h3>
+              <p class="slider-text">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
               <a class="slider-item-button button button-red" href="#">Узнать больше</a>
             </li>
           </ul>
@@ -73,7 +72,7 @@
           <li class="services-item">
             <img class="service-image" src="img/service1.jpg" width="300" height="146" alt="Вебсайты">
             <h3>Веб-сайты</h3>
-            <p class="service-text">Мир никогда не  будет прежним &nbsp;&nbsp;&nbsp; после того как увидит ваш сайт!</p>
+            <p class="service-text">Мир никогда не  будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-red button-hover" href="#">Заказать</a>
           </li>
           <li class="services-item">
@@ -85,7 +84,7 @@
           <li class="services-item">
             <img class="service-image" src="img/service3.jpg" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
-            <p class="service-text">Вы даже не подозреваете, &nbsp;  &nbsp;  &nbsp;  насколько вы изумительны!</p>
+            <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button button-yellow button-hover" href="#">Заказать</a>
           </li>
         </ul>
@@ -169,7 +168,9 @@
             <a class="button button-red modal-write-us map-button" href="writeus.html">Напишите нам</a>
         </div>
       </div>
+      <img class="map-hidden" src="img/map.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8dbd3145ba81518b280668772244f5726e2923f65aa03a0ab07e19cdf4159e50&amp;source=constructor" height="416"></iframe>
+
     </section>
   </main>
 
@@ -216,10 +217,10 @@
           <textarea class="contact-input letter-text" id="letter-text" rows="5" cols="92" name="text" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button button-red button-contact">Отправить</button>
-        <button class="contact-close" type="submit">Закрыть</button>
+        <button class="contact-close">Закрыть</button>
       </div>
     </form>
   </section>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
