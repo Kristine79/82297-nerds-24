@@ -105,19 +105,15 @@ a {
 
 /*Подчеркивание ссылки магазина*/
 
-.menu-links .active_page {
-  position: relative;
-  padding-bottom: 13px;
+.active-page {
+  margin-bottom: 12px;
 }
 
-.active_page::before {
+.active-page::after {
   content: "";
-  position: absolute;
-  top: 30%;
-  width: 74px;
-  height: 18px;
+  display: block;
   border-bottom: 2px solid #e74246;
-
+  padding-bottom: 3px;
 }
 
 .services {
@@ -133,14 +129,13 @@ a {
 
 .service-text {
  width: 250px;
- text-align: left;
 }
 
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   margin-bottom: 18px;
 }
 
@@ -164,6 +159,7 @@ a {
 
 .main-footer {
   padding-bottom: 70px;
+  padding-top: 70px;
 }
 
 .services-list {
@@ -415,7 +411,7 @@ a {
 .footer-header {
   display: block;
   margin: 0 0 12px;
-  color: #00000;
+  color: #000000;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -435,7 +431,7 @@ a {
 .page-title {
   font-size: 55px;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 52px;
   color: #000000;
   text-align: center;
   background-color: #eeeeee;
@@ -494,7 +490,7 @@ a {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 59px;
+  margin-bottom: 58px;
 }
 
 .radio-filter-block {
@@ -583,7 +579,7 @@ a {
 
 /*Первый фильтр*/
 
-.radio_button {
+.radio-button {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -602,7 +598,7 @@ a {
   cursor: pointer;
 }
 
-.radiofilter:checked + .radio_button::before {
+.radiofilter:checked + .radio-button::before {
   position: absolute;
   content: "";
   width: 4px;
@@ -614,41 +610,42 @@ a {
   bottom: 3px;
 }
 
-.radiofilter:focus + .radio_button {
+.radiofilter:focus + .radio-button {
   border-color: #4c4c4c;
 }
 
-.radiofilter:focus + .radio_button:before {
+.radiofilter:focus + .radio-button:before {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.filter-option:hover .radio_button {
+.filter-option:hover .radio-button {
   border-color: #4c4c4c;
 }
 
-.filter-option:hover .radio_button:before{
+.filter-option:hover .radio-button:before{
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
 
-.radiofilter:checked + .radio_button:hover:before{
+.radiofilter:checked + .radio-button:hover:before{
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.radio_button:disabled {
+.radiofilter:disabled + .radio-button:before{
   opacity: .1;
 }
 
-.filter-name:disabled {
+.radiofilter:disabled + .radio-button:hover:before {
   opacity: .1;
 }
 
-.radiofilter:disabled + .radio_button:hover:before{
+.radiofilter:disabled ~ .filter-name {
   opacity: .1;
 }
+
 
 /*Второй фильтр. Особенности*/
 
@@ -692,11 +689,15 @@ a {
    opacity: 1;
 }
 
-.checkbox:disabled {
+.checkboxfilter:disabled + .checkbox:before{
   opacity: .1;
 }
 
 .checkboxfilter:disabled + .checkbox:hover:before{
+  opacity: .1;
+}
+
+.checkboxfilter:disabled ~ .filter-name {
   opacity: .1;
 }
 
@@ -754,7 +755,7 @@ a {
 .sort {
   display: flex;
   padding-bottom: 55px;
-  padding-top: 56px;
+  padding-top: 55px;
 }
 
 .sort a {
@@ -778,7 +779,7 @@ a {
 
 .sort-down,
 .sort-up {
-    font-size: 0;
+  font-size: 0;
 }
 
 
@@ -852,7 +853,7 @@ a {
 
 .filters {
   padding-right: 141px;
-  padding-top: 60px;
+  padding-top: 59px;
 }
 
 .catalog {
@@ -911,7 +912,7 @@ a {
   height: 14px;
   background-color: #ffffff;
   border-radius: 50%;
-  box-shadow: 23px 0 0 #ffffff, 46px 0 0 #ffffff;
+
 }
 
 .product-image {
@@ -921,7 +922,7 @@ a {
 }
 
 .product-image:hover {
-  box-shadow: 0px 14px 7px 7px rgba(0, 1, 1, 0.75);
+ box-shadow: 0 3px 0 16px rgba(0, 0, 0, 0.25);
 }
 
 /*Блок описания при наведении на плитку*/
@@ -1231,13 +1232,13 @@ a {
 .slider-item:nth-child(2) {
   background-image: url("../img/slide-2.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% -8px;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/slide-3.png");
   background-repeat: no-repeat;
-  background-position: 100% 20px;
+  background-position: 100% 10px;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -1455,10 +1456,7 @@ a {
 
 .map {
   position: relative;
-  background-color: #eee;
-  background-size: cover;
-  max-height: 416px;
-  margin-bottom: 7px;
+  min-height: 416px;
 }
 
 .map-title {
@@ -1487,6 +1485,10 @@ a {
   left: 0;
 }
 
+.map-contacts h3 {
+ padding-left: 25px;
+}
+
 .map-contacts p {
   color: #666666;
   font-style: normal;
@@ -1510,20 +1512,11 @@ a {
   display: block;
   width: 100%;
   border: none;
-  margin-bottom: 70px;
-}
-
-.map-contacts h3 {
- padding-left: 25px;
-}
-
-.map {
-  position: relative;
 }
 
 .map-hidden {
-  display: none;
   position: absolute;
-  right: 40px;
+  left: 50%;
+  margin-left: -720px;
+  z-index: -1;
 }
-
