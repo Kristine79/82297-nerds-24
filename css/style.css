@@ -614,7 +614,7 @@ a {
   border-color: #4c4c4c;
 }
 
-.radiofilter:focus + .radio-button:before {
+.radiofilter:focus + .radio-button::before {
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
@@ -623,27 +623,24 @@ a {
   border-color: #4c4c4c;
 }
 
-.filter-option:hover .radio-button:before{
+.filter-option:hover .radio-button::before{
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-
-.radiofilter:checked + .radio-button:hover:before{
+.radiofilter:checked + .radio-button:hover::before{
   background-color: #4c4c4c;
   border-color: #4c4c4c;
 }
 
-.radiofilter:disabled + .radio-button:before{
+.filter-option .radiofilter:disabled  + .radio-button:hover:before {
   opacity: .1;
-}
-
-.radiofilter:disabled + .radio-button:hover:before {
-  opacity: .1;
+  cursor: none;
 }
 
 .radiofilter:disabled ~ .filter-name {
   opacity: .1;
+  cursor: none;
 }
 
 
@@ -677,28 +674,31 @@ a {
   opacity: .4;
 }
 
-.filter-image:hover .checkbox:before {
+.filter-image:hover .checkbox::before {
  opacity: 1;
 }
 
-.checkboxfilter:focus + .checkbox:before {
+.checkboxfilter:focus + .checkbox::before {
   opacity: 1;
 }
 
-.checkboxfilter:checked + .checkbox:hover:before{
+.checkboxfilter:checked + .checkbox:hover::before{
    opacity: 1;
 }
 
-.checkboxfilter:disabled + .checkbox:before{
+.checkboxfilter:disabled + .checkbox::before{
   opacity: .1;
+  cursor: none;
 }
 
-.checkboxfilter:disabled + .checkbox:hover:before{
+.checkboxfilter:disabled + .checkbox:hover::before{
   opacity: .1;
+  cursor: none;
 }
 
 .checkboxfilter:disabled ~ .filter-name {
   opacity: .1;
+  cursor: none;
 }
 
 .button-filter {
@@ -898,9 +898,9 @@ a {
   padding: 0;
 }
 
-.catalog-item:hover:before {
+.catalog-item:hover::before {
   opacity: 1;
-  box-shadow: 0px 0px 7px 7px rgba(0, 1, 1, 0.75);
+
 }
 
 .catalog-item::after {
@@ -921,8 +921,8 @@ a {
   left: 0;
 }
 
-.product-image:hover {
- box-shadow: 0 3px 0 16px rgba(0, 0, 0, 0.25);
+.catalog-item:hover {
+  box-shadow: 0 6px 15px 0 rgba(0,1,1,.25);
 }
 
 /*Блок описания при наведении на плитку*/
@@ -948,7 +948,6 @@ a {
 .description {
   display: block;
   line-height: 19px;
-
   color: #8a8a8a;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -1111,19 +1110,19 @@ a {
   transform: rotate(-45deg);
 }
 
-.contact-close:hover:after {
+.contact-close:hover::after {
  background-color: #fc565a;
 }
 
-.contact-close:hover:before {
+.contact-close:hover::before {
  background-color: #fc565a;
 }
 
-.contact-close:active:after {
+.contact-close:active::after {
  background-color: #ffeeee;
 }
 
-.contact-close:active:before {
+.contact-close:active::before {
  background-color: #ffeeee;
 }
 
