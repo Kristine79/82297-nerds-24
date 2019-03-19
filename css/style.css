@@ -40,9 +40,9 @@ a {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  }
+}
 
 .menu-links,
 .catalog-list,
@@ -72,10 +72,9 @@ a {
   color: #000000;
 }
 
-.cart .cart-link {
+.cart-link {
   position: relative;
   padding-left: 50px;
-
 }
 
 .cart-link::before {
@@ -174,7 +173,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 45px;
   color: #000000;
   margin-bottom: 33px;
@@ -190,7 +189,7 @@ a {
 
 .features-digits  {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 10px;
   color: #000000;
 }
@@ -412,7 +411,7 @@ a {
   display: block;
   margin: 0 0 12px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
 }
@@ -430,12 +429,12 @@ a {
 
 .page-title {
   font-size: 55px;
-  font-weight: bold;
-  line-height: 52px;
+  font-weight: 500;
+  line-height: 55px;
   color: #000000;
   text-align: center;
   background-color: #eeeeee;
-  padding-top: 68px;
+  padding-top: 66px;
   padding-bottom: 109px;
   margin: 0;
 }
@@ -447,18 +446,18 @@ a {
 }
 
 .filter-option {
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 
 .filter-image {
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 
 .range-legend-title {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.18px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -468,14 +467,12 @@ a {
 }
 
 .radio-legend-title {
-  padding-bottom: 15px;
-}
-
-.product-filter legend {
   font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.18px;
   text-transform: uppercase;
+  padding-bottom: 13px;
 }
 
 .product-filter ul {
@@ -490,7 +487,7 @@ a {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 58px;
+  margin-bottom: 55px;
 }
 
 .radio-filter-block {
@@ -507,8 +504,8 @@ a {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
-  padding-top: 40px;
+  margin-bottom: 14px;
+  padding-top: 38px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -528,7 +525,7 @@ a {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -633,7 +630,7 @@ a {
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 31px;
+  padding-left: 36px;
 }
 
 .checkbox::before {
@@ -687,9 +684,9 @@ a {
   background-color: #eeeeee;
   color: #000000;
   text-transform: uppercase;
-  padding-left: 89px;
-  padding-right: 88px;
-  padding-top: 16px;
+  padding-left: 88px;
+  padding-right: 90px;
+  padding-top: 18px;
   padding-bottom: 16px;
   border-radius: 5px;
 }
@@ -701,8 +698,7 @@ a {
 
 .button-filter:active {
   background-color: #d5d5d5;
-  padding-top: 13px;
-  border-top: 3px solid #bfbfbf;
+  box-shadow: inset 0px 3px 0 0;
   color: #959595;
 }
 
@@ -722,8 +718,8 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 /*Сортировка*/
@@ -835,7 +831,7 @@ a {
 
 .filters {
   padding-right: 141px;
-  padding-top: 59px;
+  padding-top: 56px;
 }
 
 .catalog {
@@ -983,7 +979,7 @@ a {
 
 .contact-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce .6s;
 }
 
 .contact-input:focus {
@@ -1000,12 +996,12 @@ a {
   display: block;
   margin-bottom: 7px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .contact-title {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 45px;
   color: #000000;
   padding-top: 30px;
@@ -1058,7 +1054,7 @@ a {
 
 
 .contact-error {
-  animation: shake 0.6s;
+  animation: shake .6s;
 }
 
 .contact-close {
@@ -1256,7 +1252,7 @@ a {
   margin-bottom: 28px;
   font-size: 55px;
   line-height: 55px;
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -1348,7 +1344,7 @@ a {
 
 .feature-table caption {
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
   color: #000000;
@@ -1389,14 +1385,14 @@ a {
   background-color: #eeeeee;
   border-radius: 5px;
   color: #000000;
-  font-weight: bold;
-  margin-right: 7px;
+  font-weight: 500;
+  margin-right: 6px;
 }
 
 .pagination-item-current a {
   background-color: #ffffff;
   border: 4px solid #eeeeee;
-  padding: 11px 16px;
+  padding: 12px 17px;
   border-radius: 5px;
 }
 
@@ -1415,7 +1411,7 @@ a {
   text-transform: uppercase;
   padding-left: 79px;
   padding-right: 78px;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 12px;
   margin-top: 3px;
   margin-left: 10px;
@@ -1429,8 +1425,7 @@ a {
 .pagination-item:not(:first-child) a:active {
  background-color: #d5d5d5;
  color: #959595;
- padding-top: 10px;
- border-top: 3px solid #bfbfbf;
+ box-shadow: inset 0px 3px 0 0;
 }
 
 /*Карта*/
@@ -1443,8 +1438,8 @@ a {
 .map-title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
-  padding-top: 30px;
+  font-weight: 700;
+  padding-top: 32px;
 }
 
 .map-wrapper {
@@ -1476,7 +1471,7 @@ a {
   line-height: 18px;
   max-width: 210px;
   padding-right: 0;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-left: 27px;
 }
 
