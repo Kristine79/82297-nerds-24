@@ -438,7 +438,7 @@ a {
   padding-top: 66px;
   padding-bottom: 109px;
   margin: 0;
-  margin-right: 3px;
+  padding-right: 3px;
 }
 
 .filter-block {
@@ -601,6 +601,7 @@ a {
 }
 
 .radiofilter:checked + .radio-button::before {
+  display: block;
   content: "";
   width: 9px;
   height: 9px;
@@ -1417,14 +1418,24 @@ a {
   border-radius: 5px;
 }
 
+.button-pagination:hover {
+  background-color: #dfdfdf;
+}
+
+.button-pagination:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
 .pagination-item:not(:first-child) a:hover {
- background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 .pagination-item:not(:first-child) a:active {
- background-color: #d5d5d5;
- color: #959595;
- box-shadow: inset 0px 3px 0 0;
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /*Карта*/
