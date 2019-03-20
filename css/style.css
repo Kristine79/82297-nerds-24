@@ -266,12 +266,13 @@ a {
   background-color: #e74246
 }
 
-.social-button:active {
-  background-color: #d7373b
+.social-button:active .social-image {
+  background-color: #d7373b;
+  opacity: .3;
 }
 
-.social-image:active {
-  opacity: .3;
+.social-button:active {
+  background-color: #d7373b;
 }
 
 /*Сетка*/
@@ -437,6 +438,7 @@ a {
   padding-top: 66px;
   padding-bottom: 109px;
   margin: 0;
+  margin-right: 3px;
 }
 
 .filter-block {
@@ -472,7 +474,7 @@ a {
   line-height: 30px;
   letter-spacing: 0.18px;
   text-transform: uppercase;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
 }
 
 .product-filter ul {
@@ -592,7 +594,7 @@ a {
   flex-shrink: 0;
   width: 25px;
   height: 25px;
-  margin-right: 10px;
+  margin-right: 11px;
   border-radius: 50%;
   border: 4px solid #4d4d4d;
   opacity: .4;
@@ -698,7 +700,7 @@ a {
 
 .button-filter:active {
   background-color: #d5d5d5;
-  box-shadow: inset 0px 3px 0 0;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: #959595;
 }
 
@@ -752,14 +754,13 @@ a {
 }
 
 .sort-items li {
-  padding-right: 27px;
+  padding-right: 26px;
 }
 
 .sort-down,
 .sort-up {
   font-size: 0;
 }
-
 
 .sort-items a {
   font-size: 14px;
@@ -772,10 +773,10 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 40px;
+  width: 43px;
   padding: 0;
-  margin-left: 21px;
-  padding-top: 7px;
+  margin-left: 24px;
+  padding-top: 9px;
 }
 
 .sort a:active {
@@ -878,7 +879,6 @@ a {
 
 .catalog-item:hover::before {
   opacity: 1;
-
 }
 
 .catalog-item::after {
@@ -890,7 +890,6 @@ a {
   height: 14px;
   background-color: #ffffff;
   border-radius: 50%;
-
 }
 
 .product-image {
@@ -924,8 +923,8 @@ a {
 }
 
 .description {
-  display: block;
   line-height: 19px;
+  width: 240px;
   color: #8a8a8a;
   padding-bottom: 30px;
   margin: 0 auto;
