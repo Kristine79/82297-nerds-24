@@ -54,15 +54,15 @@ a {
   list-style: none;
 }
 
-.logo-image {
+.logo{
   margin-right: 203px;
 }
 
-.logo-image:hover {
+.logo[href]:hover {
   opacity: .8;
 }
 
-.logo-image:active {
+.logo[href]:active {
   opacity: .3;
 }
 
